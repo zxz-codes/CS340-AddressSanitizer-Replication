@@ -1,0 +1,19 @@
+$ bash -c 'find "$(clang-14 -print-resource-dir)" -name "*asan*x86_64*"'
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.asan_cxx-x86_64.a
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.asan-preinit-x86_64.a
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan_aliases-x86_64.so
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan_aliases_cxx-x86_64.a.syms
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.asan_cxx-x86_64.a.syms
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.gwp_asan-x86_64.a
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan_aliases-x86_64.a
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan-x86_64.so
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan_cxx-x86_64.a
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.asan-x86_64.so
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan_aliases_cxx-x86_64.a
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.asan-x86_64.a.syms
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.asan_static-x86_64.a
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.asan-x86_64.a
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan-x86_64.a
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan-x86_64.a.syms
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan_aliases-x86_64.a.syms
+/usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/libclang_rt.hwasan_cxx-x86_64.a.syms

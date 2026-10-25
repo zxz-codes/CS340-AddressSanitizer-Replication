@@ -1,0 +1,11 @@
+$ taskset -c 0 /usr/bin/time -f 'wall_seconds=%e\nuser_seconds=%U\nsystem_seconds=%S\nmax_rss_kib=%M' -o /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/timing/extension/mst/redzone-32-02.time /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/asan/MultiSource/Benchmarks/Olden/mst/mst 1000
+Making graph of size 1000
+Make phase 2
+Make phase 3
+Make phase 4
+Make returning
+Graph completed
+About to compute mst 
+Compute phase 1
+Compute phase 2
+MST has cost 3793

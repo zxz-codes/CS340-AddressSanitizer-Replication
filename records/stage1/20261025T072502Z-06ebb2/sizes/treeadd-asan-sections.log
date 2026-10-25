@@ -1,0 +1,3 @@
+$ llvm-size-14 /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/asan/MultiSource/Benchmarks/Olden/treeadd/treeadd
+   text	   data	    bss	    dec	    hex	filename
+1092098	  13856	9779604	10885558	 a619b6	/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/asan/MultiSource/Benchmarks/Olden/treeadd/treeadd

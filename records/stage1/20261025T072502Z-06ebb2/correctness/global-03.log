@@ -1,0 +1,44 @@
+$ taskset -c 0 /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases global 8
+=================================================================
+==697==ERROR: AddressSanitizer: global-buffer-overflow on address 0x000000e64720 at pc 0x0000004da22a bp 0x7ffe425416f0 sp 0x7ffe425416e8
+READ of size 4 at 0x000000e64720 thread T0
+    #0 0x4da229 in exercise /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:14:46
+    #1 0x4d9f07 in main /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:23:5
+    #2 0x72cb7a229d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+    #3 0x72cb7a229e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+    #4 0x41c314 in _start (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x41c314) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32)
+
+0x000000e64720 is located 0 bytes to the right of global variable 'global_buffer' defined in '/mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:5:21' (0xe64700) of size 32
+SUMMARY: AddressSanitizer: global-buffer-overflow /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:14:46 in exercise
+Shadow bytes around the buggy address:
+  0x0000801c4890: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0000801c48a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0000801c48b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0000801c48c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0000801c48d0: 00 00 00 00 00 00 00 00 00 00 00 00 04 f9 f9 f9
+=>0x0000801c48e0: 00 00 00 00[f9]f9 f9 f9 00 00 00 00 00 00 00 00
+  0x0000801c48f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0000801c4900: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0000801c4910: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0000801c4920: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0000801c4930: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==697==ABORTING

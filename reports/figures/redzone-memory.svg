@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="480" height="244" preserveAspectRatio="xMinYMin meet" viewBox="0 0 480 244" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="480" height="244"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-244)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="44" y="232" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(8%,19%,29%); stroke:none;" transform="translate(0,464) scale(1,-1)">One-factor extension: minimum heap redzone</text>
+			<text x="44" y="218" style="font-family: Helvetica; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,436) scale(1,-1)">Peak RSS in MiB; error bars: sample SD</text>
+			<path d="M 44,43 L 467,43 Z" style="stroke: rgb(86%,89%,91%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="27.0" y="40.0" style="font-family: Times-Roman; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,80) scale(1,-1)">0.0</text>
+			<path d="M 44,85 L 467,85 Z" style="stroke: rgb(86%,89%,91%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="23.0" y="82.0" style="font-family: Times-Roman; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,164) scale(1,-1)">27.2</text>
+			<path d="M 44,127 L 467,127 Z" style="stroke: rgb(86%,89%,91%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="23.0" y="124.0" style="font-family: Times-Roman; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,248) scale(1,-1)">54.3</text>
+			<path d="M 44,169 L 467,169 Z" style="stroke: rgb(86%,89%,91%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="23.0" y="166.0" style="font-family: Times-Roman; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,332) scale(1,-1)">81.5</text>
+			<path d="M 44,211 L 467,211 Z" style="stroke: rgb(86%,89%,91%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="19.0" y="208.0" style="font-family: Times-Roman; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,416) scale(1,-1)">108.7</text>
+			<text x="139.97" y="28" style="font-family: Helvetica; font-size: 8px;fill: rgb(8%,19%,29%); stroke:none;" transform="translate(0,56) scale(1,-1)">bisort</text>
+			<rect x="116.75" y="43" width="20.0" height="48.63160439639242" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,54%,52%); fill-rule: evenodd;"/>
+			<path d="M 126.75,91.58613 L 126.75,91.677078 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 123.75,91.677078 L 129.75,91.677078 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<rect x="139.75" y="43" width="20.0" height="62.55533615383359" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,19%,29%); fill-rule: evenodd;"/>
+			<path d="M 149.75,105.503809 L 149.75,105.606863 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 146.75,105.606863 L 152.75,105.606863 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<rect x="162.75" y="43" width="20.0" height="146.07598596534103" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(81%,47%,19%); fill-rule: evenodd;"/>
+			<path d="M 172.75,189.065015 L 172.75,189.086957 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 169.75,189.086957 L 175.75,189.086957 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<text x="354.806" y="28" style="font-family: Helvetica; font-size: 8px;fill: rgb(8%,19%,29%); stroke:none;" transform="translate(0,56) scale(1,-1)">mst</text>
+			<rect x="328.25" y="43" width="20.0" height="56.38821485321816" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,54%,52%); fill-rule: evenodd;"/>
+			<path d="M 338.25,99.336194 L 338.25,99.440235 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 335.25,99.440235 L 341.25,99.440235 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<rect x="351.25" y="43" width="20.0" height="56.40512431232679" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,19%,29%); fill-rule: evenodd;"/>
+			<path d="M 361.25,99.385095 L 361.25,99.425154 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 358.25,99.425154 L 364.25,99.425154 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<rect x="374.25" y="43" width="20.0" height="56.36768193858626" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(81%,47%,19%); fill-rule: evenodd;"/>
+			<path d="M 384.25,99.294288 L 384.25,99.441076 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 381.25,99.441076 L 387.25,99.441076 Z" style="stroke: rgb(8%,19%,29%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<rect x="44" y="7" width="8" height="8" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,54%,52%); fill-rule: evenodd;"/>
+			<text x="56" y="8" style="font-family: Helvetica; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,16) scale(1,-1)">redzone=16</text>
+			<rect x="194" y="7" width="8" height="8" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,19%,29%); fill-rule: evenodd;"/>
+			<text x="206" y="8" style="font-family: Helvetica; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,16) scale(1,-1)">redzone=32</text>
+			<rect x="344" y="7" width="8" height="8" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(81%,47%,19%); fill-rule: evenodd;"/>
+			<text x="356" y="8" style="font-family: Helvetica; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,16) scale(1,-1)">redzone=128</text>
+		</g>
+	</g>
+</svg>

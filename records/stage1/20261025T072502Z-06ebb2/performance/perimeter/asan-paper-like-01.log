@@ -1,0 +1,4 @@
+$ taskset -c 0 /usr/bin/time -f 'wall_seconds=%e\nuser_seconds=%U\nsystem_seconds=%S\nmax_rss_kib=%M' -o /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/timing/performance/perimeter/asan-paper-like-01.time /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/asan/MultiSource/Benchmarks/Olden/perimeter/perimeter 10
+Perimeter with 10 levels on 1 processors
+# of leaves is 1048576
+perimeter is 16384

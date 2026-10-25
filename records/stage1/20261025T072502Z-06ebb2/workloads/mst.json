@@ -1,0 +1,3 @@
+{
+  "native_test": "RUN: cd %S ; %S/mst 1000\nVERIFY: %b/fpcmp-target %o %S/mst.reference_output\n"
+}

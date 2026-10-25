@@ -1,0 +1,75 @@
+$ cmake --build /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/asan -j 2
+[1/74] Building C object tools/CMakeFiles/timeit-target.dir/timeit.c.o
+[2/74] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+[3/74] Linking C executable tools/timeit-target
+[4/74] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[5/74] Linking C executable tools/fpcmp-target
+[6/74] Generating HashProgramOutput.sh
+[7/74] [TEST_SUITE_HOST_CC] Compiling host source timeit.c
+[8/74] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[9/74] Generating ../lit.cfg
+[10/74] Generating __init__.py
+[11/74] Generating modules/__init__.py
+[12/74] Generating modules/codesize.py
+[13/74] Generating modules/compiletime.py
+[14/74] Generating modules/hash.py
+[15/74] Generating modules/hpmcount.py
+[16/74] Generating modules/microbenchmark.py
+[17/74] [TEST_SUITE_HOST_CC] Linking host executable timeit
+[18/74] Generating modules/perf.py
+[19/74] Generating modules/profilegen.py
+[20/74] Generating modules/remote.py
+[21/74] Generating modules/run.py
+[22/74] Generating modules/run_under.py
+[23/74] Generating modules/stats.py
+[24/74] Generating modules/timeit.py
+[25/74] Generating shellcommand.py
+[26/74] Generating test.py
+[27/74] Generating testfile.py
+[28/74] Generating testplan.py
+[29/74] Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.o
+[30/74] Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.o
+[31/74] Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.o
+[32/74] Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.o
+[33/74] Building C object MultiSource/Benchmarks/Olden/bisort/CMakeFiles/bisort.dir/args.c.o
+[34/74] Building C object MultiSource/Benchmarks/Olden/bisort/CMakeFiles/bisort.dir/bitonic.c.o
+[35/74] Linking C executable MultiSource/Benchmarks/Olden/bh/bh
+[36/74] Building C object MultiSource/Benchmarks/Olden/em3d/CMakeFiles/em3d.dir/args.c.o
+[37/74] Linking C executable MultiSource/Benchmarks/Olden/bisort/bisort
+[38/74] Building C object MultiSource/Benchmarks/Olden/em3d/CMakeFiles/em3d.dir/em3d.c.o
+[39/74] Building C object MultiSource/Benchmarks/Olden/em3d/CMakeFiles/em3d.dir/main.c.o
+[40/74] Building C object MultiSource/Benchmarks/Olden/em3d/CMakeFiles/em3d.dir/util.c.o
+[41/74] Building C object MultiSource/Benchmarks/Olden/em3d/CMakeFiles/em3d.dir/make_graph.c.o
+[42/74] Building C object MultiSource/Benchmarks/Olden/health/CMakeFiles/health.dir/args.c.o
+[43/74] Linking C executable MultiSource/Benchmarks/Olden/em3d/em3d
+[44/74] Building C object MultiSource/Benchmarks/Olden/health/CMakeFiles/health.dir/health.c.o
+[45/74] Building C object MultiSource/Benchmarks/Olden/health/CMakeFiles/health.dir/list.c.o
+[46/74] Building C object MultiSource/Benchmarks/Olden/health/CMakeFiles/health.dir/poisson.c.o
+[47/74] Building C object MultiSource/Benchmarks/Olden/mst/CMakeFiles/mst.dir/args.c.o
+[48/74] Building C object MultiSource/Benchmarks/Olden/mst/CMakeFiles/mst.dir/hash.c.o
+[49/74] Linking C executable MultiSource/Benchmarks/Olden/health/health
+[50/74] Building C object MultiSource/Benchmarks/Olden/mst/CMakeFiles/mst.dir/main.c.o
+[51/74] Building C object MultiSource/Benchmarks/Olden/mst/CMakeFiles/mst.dir/makegraph.c.o
+[52/74] Building C object MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.o
+[53/74] Building C object MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.o
+[54/74] Linking C executable MultiSource/Benchmarks/Olden/mst/mst
+[55/74] Building C object MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.o
+[56/74] Building C object MultiSource/Benchmarks/Olden/power/CMakeFiles/power.dir/build.c.o
+[57/74] Building C object MultiSource/Benchmarks/Olden/power/CMakeFiles/power.dir/compute.c.o
+[58/74] Linking C executable MultiSource/Benchmarks/Olden/perimeter/perimeter
+[59/74] Building C object MultiSource/Benchmarks/Olden/treeadd/CMakeFiles/treeadd.dir/args.c.o
+[60/74] Building C object MultiSource/Benchmarks/Olden/power/CMakeFiles/power.dir/main.c.o
+[61/74] Building C object MultiSource/Benchmarks/Olden/treeadd/CMakeFiles/treeadd.dir/node.c.o
+[62/74] Linking C executable MultiSource/Benchmarks/Olden/power/power
+[63/74] Building C object MultiSource/Benchmarks/Olden/treeadd/CMakeFiles/treeadd.dir/par-alloc.c.o
+[64/74] Building C object MultiSource/Benchmarks/Olden/tsp/CMakeFiles/tsp.dir/args.c.o
+[65/74] Building C object MultiSource/Benchmarks/Olden/tsp/CMakeFiles/tsp.dir/build.c.o
+[66/74] Linking C executable MultiSource/Benchmarks/Olden/treeadd/treeadd
+[67/74] Building C object MultiSource/Benchmarks/Olden/tsp/CMakeFiles/tsp.dir/main.c.o
+[68/74] Building C object MultiSource/Benchmarks/Olden/tsp/CMakeFiles/tsp.dir/tsp.c.o
+[69/74] Building C object MultiSource/Benchmarks/Olden/voronoi/CMakeFiles/voronoi.dir/args.c.o
+[70/74] Linking C executable MultiSource/Benchmarks/Olden/tsp/tsp
+[71/74] Building C object MultiSource/Benchmarks/Olden/voronoi/CMakeFiles/voronoi.dir/newvor.c.o
+[72/74] Building C object MultiSource/Benchmarks/Olden/voronoi/CMakeFiles/voronoi.dir/output.c.o
+[73/74] Building C object MultiSource/Benchmarks/Olden/voronoi/CMakeFiles/voronoi.dir/vector.c.o
+[74/74] Linking C executable MultiSource/Benchmarks/Olden/voronoi/voronoi

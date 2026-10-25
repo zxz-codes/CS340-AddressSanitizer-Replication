@@ -1,0 +1,1 @@
+$ llvm-strip-14 --strip-debug -o /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/native/MultiSource/Benchmarks/Olden/treeadd/treeadd.nodebug /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/native/MultiSource/Benchmarks/Olden/treeadd/treeadd

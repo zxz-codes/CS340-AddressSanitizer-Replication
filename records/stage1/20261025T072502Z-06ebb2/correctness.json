@@ -1,0 +1,362 @@
+[
+  {
+    "case": "heap",
+    "run": 1,
+    "expected": "heap-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/heap-01.log"
+  },
+  {
+    "case": "heap",
+    "run": 2,
+    "expected": "heap-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/heap-02.log"
+  },
+  {
+    "case": "heap",
+    "run": 3,
+    "expected": "heap-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/heap-03.log"
+  },
+  {
+    "case": "heap",
+    "run": 4,
+    "expected": "heap-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/heap-04.log"
+  },
+  {
+    "case": "heap",
+    "run": 5,
+    "expected": "heap-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/heap-05.log"
+  },
+  {
+    "case": "stack",
+    "run": 1,
+    "expected": "stack-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/stack-01.log"
+  },
+  {
+    "case": "stack",
+    "run": 2,
+    "expected": "stack-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/stack-02.log"
+  },
+  {
+    "case": "stack",
+    "run": 3,
+    "expected": "stack-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/stack-03.log"
+  },
+  {
+    "case": "stack",
+    "run": 4,
+    "expected": "stack-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/stack-04.log"
+  },
+  {
+    "case": "stack",
+    "run": 5,
+    "expected": "stack-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/stack-05.log"
+  },
+  {
+    "case": "global",
+    "run": 1,
+    "expected": "global-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/global-01.log"
+  },
+  {
+    "case": "global",
+    "run": 2,
+    "expected": "global-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/global-02.log"
+  },
+  {
+    "case": "global",
+    "run": 3,
+    "expected": "global-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/global-03.log"
+  },
+  {
+    "case": "global",
+    "run": 4,
+    "expected": "global-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/global-04.log"
+  },
+  {
+    "case": "global",
+    "run": 5,
+    "expected": "global-buffer-overflow",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/global-05.log"
+  },
+  {
+    "case": "uaf",
+    "run": 1,
+    "expected": "heap-use-after-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/uaf-01.log"
+  },
+  {
+    "case": "uaf",
+    "run": 2,
+    "expected": "heap-use-after-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/uaf-02.log"
+  },
+  {
+    "case": "uaf",
+    "run": 3,
+    "expected": "heap-use-after-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/uaf-03.log"
+  },
+  {
+    "case": "uaf",
+    "run": 4,
+    "expected": "heap-use-after-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/uaf-04.log"
+  },
+  {
+    "case": "uaf",
+    "run": 5,
+    "expected": "heap-use-after-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/uaf-05.log"
+  },
+  {
+    "case": "double_free",
+    "run": 1,
+    "expected": "attempting double-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/double_free-01.log"
+  },
+  {
+    "case": "double_free",
+    "run": 2,
+    "expected": "attempting double-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/double_free-02.log"
+  },
+  {
+    "case": "double_free",
+    "run": 3,
+    "expected": "attempting double-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/double_free-03.log"
+  },
+  {
+    "case": "double_free",
+    "run": 4,
+    "expected": "attempting double-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/double_free-04.log"
+  },
+  {
+    "case": "double_free",
+    "run": 5,
+    "expected": "attempting double-free",
+    "returncode": 1,
+    "passed": true,
+    "log": "correctness/double_free-05.log"
+  },
+  {
+    "case": "control-heap",
+    "run": 1,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-heap-01.log"
+  },
+  {
+    "case": "control-heap",
+    "run": 2,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-heap-02.log"
+  },
+  {
+    "case": "control-heap",
+    "run": 3,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-heap-03.log"
+  },
+  {
+    "case": "control-heap",
+    "run": 4,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-heap-04.log"
+  },
+  {
+    "case": "control-heap",
+    "run": 5,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-heap-05.log"
+  },
+  {
+    "case": "control-stack",
+    "run": 1,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-stack-01.log"
+  },
+  {
+    "case": "control-stack",
+    "run": 2,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-stack-02.log"
+  },
+  {
+    "case": "control-stack",
+    "run": 3,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-stack-03.log"
+  },
+  {
+    "case": "control-stack",
+    "run": 4,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-stack-04.log"
+  },
+  {
+    "case": "control-stack",
+    "run": 5,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-stack-05.log"
+  },
+  {
+    "case": "control-global",
+    "run": 1,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-global-01.log"
+  },
+  {
+    "case": "control-global",
+    "run": 2,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-global-02.log"
+  },
+  {
+    "case": "control-global",
+    "run": 3,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-global-03.log"
+  },
+  {
+    "case": "control-global",
+    "run": 4,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-global-04.log"
+  },
+  {
+    "case": "control-global",
+    "run": 5,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-global-05.log"
+  },
+  {
+    "case": "control-fixed",
+    "run": 1,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-fixed-01.log"
+  },
+  {
+    "case": "control-fixed",
+    "run": 2,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-fixed-02.log"
+  },
+  {
+    "case": "control-fixed",
+    "run": 3,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-fixed-03.log"
+  },
+  {
+    "case": "control-fixed",
+    "run": 4,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-fixed-04.log"
+  },
+  {
+    "case": "control-fixed",
+    "run": 5,
+    "expected": "clean exit",
+    "returncode": 0,
+    "passed": true,
+    "log": "correctness/control-fixed-05.log"
+  }
+]

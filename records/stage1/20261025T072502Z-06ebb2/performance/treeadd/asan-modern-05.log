@@ -1,0 +1,5 @@
+$ taskset -c 0 /usr/bin/time -f 'wall_seconds=%e\nuser_seconds=%U\nsystem_seconds=%S\nmax_rss_kib=%M' -o /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/timing/performance/treeadd/asan-modern-05.time /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/asan/MultiSource/Benchmarks/Olden/treeadd/treeadd 22
+Treeadd with 22 levels on 4 processors 
+About to enter TreeAlloc
+About to enter TreeAdd
+Received result of 4194303

@@ -1,0 +1,7 @@
+{
+  "record": "records/stage1/20261025T072502Z-06ebb2",
+  "modern_arithmetic_mean_ratio": 7.663481067264856,
+  "paper_like_arithmetic_mean_ratio": 2.2432413991995914,
+  "runs": 5,
+  "note": "Unweighted arithmetic mean of workload-level paired ratio means; not SPEC score."
+}

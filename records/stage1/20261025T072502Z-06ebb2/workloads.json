@@ -1,0 +1,32 @@
+{
+  "bisort": {
+    "binary_name": "bisort",
+    "args": [
+      "700000"
+    ]
+  },
+  "mst": {
+    "binary_name": "mst",
+    "args": [
+      "1000"
+    ]
+  },
+  "perimeter": {
+    "binary_name": "perimeter",
+    "args": [
+      "10"
+    ]
+  },
+  "treeadd": {
+    "binary_name": "treeadd",
+    "args": [
+      "22"
+    ]
+  },
+  "tsp": {
+    "binary_name": "tsp",
+    "args": [
+      "1024000"
+    ]
+  }
+}

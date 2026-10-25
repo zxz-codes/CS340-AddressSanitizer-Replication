@@ -1,0 +1,220 @@
+$ /root/.cache/cs340-asan/venv/bin/lit -v -j 1 --filter '/(bisort|mst|perimeter|treeadd|tsp)/' -o '/mnt/c/Users/31236/Desktop/OS论文复现/records/stage1/20261025T072502Z-06ebb2/build/native-lit.json' /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/native
+-- Testing: 5 of 10 tests, 1 workers --
+PASS: test-suite :: MultiSource/Benchmarks/Olden/bisort/bisort.test (1 of 5)
+********** TEST 'test-suite :: MultiSource/Benchmarks/Olden/bisort/bisort.test' RESULTS **********
+compile_time: 0.0574 
+exec_time: 0.2185 
+hash: "2ad489c91797cf9fd1457c555e909c24" 
+link_time: 0.0089 
+size: 24760 
+size..bss: 24 
+size..comment: 84 
+size..data: 16 
+size..debug_abbrev: 732 
+size..debug_addr: 376 
+size..debug_info: 2108 
+size..debug_line: 1154 
+size..debug_line_str: 394 
+size..debug_loclists: 1617 
+size..debug_rnglists: 27 
+size..debug_str: 679 
+size..debug_str_offsets: 372 
+size..dynamic: 480 
+size..dynstr: 110 
+size..dynsym: 192 
+size..eh_frame: 576 
+size..eh_frame_hdr: 140 
+size..fini: 13 
+size..fini_array: 8 
+size..gnu.hash: 36 
+size..gnu.version: 16 
+size..gnu.version_r: 48 
+size..got: 16 
+size..got.plt: 56 
+size..init: 27 
+size..init_array: 8 
+size..interp: 28 
+size..note.ABI-tag: 32 
+size..note.gnu.build-id: 36 
+size..note.gnu.property: 32 
+size..plt: 80 
+size..rela.dyn: 48 
+size..rela.plt: 96 
+size..rodata: 136 
+size..text: 2080 
+**********
+PASS: test-suite :: MultiSource/Benchmarks/Olden/mst/mst.test (2 of 5)
+********** TEST 'test-suite :: MultiSource/Benchmarks/Olden/mst/mst.test' RESULTS **********
+compile_time: 0.0811 
+exec_time: 0.0180 
+hash: "0f8f0f0c7b4955531b5d51fe58e12b12" 
+link_time: 0.0134 
+size: 28088 
+size..bss: 40 
+size..comment: 84 
+size..data: 20 
+size..debug_abbrev: 1343 
+size..debug_addr: 336 
+size..debug_info: 2644 
+size..debug_line: 1729 
+size..debug_line_str: 521 
+size..debug_loclists: 2372 
+size..debug_rnglists: 81 
+size..debug_str: 1054 
+size..debug_str_offsets: 660 
+size..dynamic: 464 
+size..dynstr: 96 
+size..dynsym: 192 
+size..eh_frame: 512 
+size..eh_frame_hdr: 116 
+size..fini: 13 
+size..fini_array: 8 
+size..gnu.hash: 28 
+size..gnu.version: 16 
+size..gnu.version_r: 48 
+size..got: 16 
+size..got.plt: 64 
+size..init: 27 
+size..init_array: 8 
+size..interp: 28 
+size..note.ABI-tag: 32 
+size..note.gnu.build-id: 36 
+size..note.gnu.property: 32 
+size..plt: 96 
+size..rela.dyn: 48 
+size..rela.plt: 120 
+size..rodata: 237 
+size..text: 2341 
+**********
+PASS: test-suite :: MultiSource/Benchmarks/Olden/perimeter/perimeter.test (3 of 5)
+********** TEST 'test-suite :: MultiSource/Benchmarks/Olden/perimeter/perimeter.test' RESULTS **********
+compile_time: 0.0662 
+exec_time: 0.0836 
+hash: "6afa046ab52687bc020a759c936d049e" 
+link_time: 0.0075 
+size: 24608 
+size..bss: 8 
+size..comment: 84 
+size..data: 16 
+size..debug_abbrev: 825 
+size..debug_addr: 352 
+size..debug_info: 1972 
+size..debug_line: 1429 
+size..debug_line_str: 414 
+size..debug_loclists: 1187 
+size..debug_rnglists: 126 
+size..debug_str: 823 
+size..debug_str_offsets: 452 
+size..dynamic: 464 
+size..dynstr: 91 
+size..dynsym: 168 
+size..eh_frame: 392 
+size..eh_frame_hdr: 92 
+size..fini: 13 
+size..fini_array: 8 
+size..gnu.hash: 28 
+size..gnu.version: 14 
+size..gnu.version_r: 48 
+size..got: 16 
+size..got.plt: 56 
+size..init: 27 
+size..init_array: 8 
+size..interp: 28 
+size..note.ABI-tag: 32 
+size..note.gnu.build-id: 36 
+size..note.gnu.property: 32 
+size..plt: 80 
+size..rela.dyn: 48 
+size..rela.plt: 96 
+size..rodata: 183 
+size..text: 2098 
+**********
+PASS: test-suite :: MultiSource/Benchmarks/Olden/treeadd/treeadd.test (4 of 5)
+********** TEST 'test-suite :: MultiSource/Benchmarks/Olden/treeadd/treeadd.test' RESULTS **********
+compile_time: 0.0410 
+exec_time: 0.0592 
+hash: "a92febdaa936ecc0ab914b3cb5e29a03" 
+link_time: 0.0094 
+size: 20480 
+size..bss: 8 
+size..comment: 84 
+size..data: 16 
+size..debug_abbrev: 592 
+size..debug_addr: 160 
+size..debug_info: 757 
+size..debug_line: 558 
+size..debug_line_str: 402 
+size..debug_loclists: 370 
+size..debug_str: 520 
+size..debug_str_offsets: 232 
+size..dynamic: 464 
+size..dynstr: 96 
+size..dynsym: 192 
+size..eh_frame: 268 
+size..eh_frame_hdr: 68 
+size..fini: 13 
+size..fini_array: 8 
+size..gnu.hash: 28 
+size..gnu.version: 16 
+size..gnu.version_r: 48 
+size..got: 16 
+size..got.plt: 64 
+size..init: 27 
+size..init_array: 8 
+size..interp: 28 
+size..note.ABI-tag: 32 
+size..note.gnu.build-id: 36 
+size..note.gnu.property: 32 
+size..plt: 96 
+size..rela.dyn: 48 
+size..rela.plt: 120 
+size..rodata: 117 
+size..text: 617 
+**********
+PASS: test-suite :: MultiSource/Benchmarks/Olden/tsp/tsp.test (5 of 5)
+********** TEST 'test-suite :: MultiSource/Benchmarks/Olden/tsp/tsp.test' RESULTS **********
+compile_time: 0.1010 
+exec_time: 0.2383 
+hash: "679bcf0ed02ed944db9cfe86ee143751" 
+link_time: 0.0183 
+size: 35624 
+size..bss: 16 
+size..comment: 84 
+size..data: 16 
+size..debug_abbrev: 1231 
+size..debug_addr: 512 
+size..debug_info: 3529 
+size..debug_line: 2567 
+size..debug_line_str: 482 
+size..debug_loclists: 4469 
+size..debug_rnglists: 51 
+size..debug_str: 854 
+size..debug_str_offsets: 556 
+size..dynamic: 480 
+size..dynstr: 129 
+size..dynsym: 240 
+size..eh_frame: 424 
+size..eh_frame_hdr: 100 
+size..fini: 13 
+size..fini_array: 8 
+size..gnu.hash: 28 
+size..gnu.version: 20 
+size..gnu.version_r: 96 
+size..got: 16 
+size..got.plt: 80 
+size..init: 27 
+size..init_array: 8 
+size..interp: 28 
+size..note.ABI-tag: 32 
+size..note.gnu.build-id: 36 
+size..note.gnu.property: 32 
+size..plt: 128 
+size..rela.dyn: 48 
+size..rela.plt: 168 
+size..rodata: 216 
+size..text: 4132 
+**********
+
+Testing Time: 0.86s
+  Excluded: 5
+  Passed  : 5

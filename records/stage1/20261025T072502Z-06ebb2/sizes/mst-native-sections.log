@@ -1,0 +1,3 @@
+$ llvm-size-14 /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/native/MultiSource/Benchmarks/Olden/mst/mst
+   text	   data	    bss	    dec	    hex	filename
+   4018	    580	     40	   4638	   121e	/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/native/MultiSource/Benchmarks/Olden/mst/mst

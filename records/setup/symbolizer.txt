@@ -1,0 +1,6 @@
+llvm-symbolizer
+Ubuntu LLVM version 14.0.0
+  
+  Optimized build.
+  Default target: x86_64-pc-linux-gnu
+  Host CPU: goldmont

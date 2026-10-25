@@ -1,0 +1,3 @@
+{
+  "native_test": "RUN: cd %S ; %S/bisort 700000\nVERIFY: %b/fpcmp-target %o %S/bisort.reference_output\n"
+}

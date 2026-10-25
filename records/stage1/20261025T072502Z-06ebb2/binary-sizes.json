@@ -1,0 +1,72 @@
+[
+  {
+    "benchmark": "bisort",
+    "variant": "native",
+    "binary_bytes": 24760,
+    "without_debug_bytes": 16416,
+    "sha256": "7bfabfa5ccfe96453a12e7d146f680b3861fc64a1dffb76dcf6124ea70f24c96"
+  },
+  {
+    "benchmark": "bisort",
+    "variant": "asan",
+    "binary_bytes": 1409600,
+    "without_debug_bytes": 1396464,
+    "sha256": "8bea1b628ad78ab7bc0f9f0075e5140f967288be86750140e5d8c492df64fc98"
+  },
+  {
+    "benchmark": "mst",
+    "variant": "native",
+    "binary_bytes": 28088,
+    "without_debug_bytes": 16400,
+    "sha256": "6100cf7bfe943d2f0d595e21343f702697414dc5c8c34b921bdea968ab52331e"
+  },
+  {
+    "benchmark": "mst",
+    "variant": "asan",
+    "binary_bytes": 1417008,
+    "without_debug_bytes": 1401336,
+    "sha256": "27bf0812067704ab4e651b274099d0994f9fd55e177265929fe5cfd92762e2ca"
+  },
+  {
+    "benchmark": "perimeter",
+    "variant": "native",
+    "binary_bytes": 24608,
+    "without_debug_bytes": 16120,
+    "sha256": "f8be4406bf16d67cfddd049de963b49e2a9b1f9458b3afcef8f1f0fd816f2546"
+  },
+  {
+    "benchmark": "perimeter",
+    "variant": "asan",
+    "binary_bytes": 1407208,
+    "without_debug_bytes": 1395576,
+    "sha256": "ac35cd5df8001c8f50513ba8888566c89ad5526208b804c3fb311b8bc3510d84"
+  },
+  {
+    "benchmark": "treeadd",
+    "variant": "native",
+    "binary_bytes": 20480,
+    "without_debug_bytes": 16048,
+    "sha256": "0c8b4cdafb6dcfa8f6ffd4a123013a037f4c268086cc4185787feb696f6ef77b"
+  },
+  {
+    "benchmark": "treeadd",
+    "variant": "asan",
+    "binary_bytes": 1402600,
+    "without_debug_bytes": 1395544,
+    "sha256": "56880644d57b56939280c600b01e38b87672f3506cd0dc646f3369f039b126bb"
+  },
+  {
+    "benchmark": "tsp",
+    "variant": "native",
+    "binary_bytes": 35624,
+    "without_debug_bytes": 20432,
+    "sha256": "db6189a35d0599b2befbc49af91c3597e7930f8e5ac3f5e717e0a02eab1f7934"
+  },
+  {
+    "benchmark": "tsp",
+    "variant": "asan",
+    "binary_bytes": 1427440,
+    "without_debug_bytes": 1404552,
+    "sha256": "18950ef7267dcf3f77d976307df23909e128af080c9cdb9f1c5032f26cdf9125"
+  }
+]

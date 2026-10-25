@@ -1,68 +1,32 @@
-# Prerequisites
-*.d
+archive/
+vendor/llvm-test-suite/
+logs/
+.local/
+tmp/
+build/
+.venv/
+*.vhdx
+*.iso
+*.tar
+*.tar.gz
+__pycache__/
 
-# Compiled Object files
-*.slo
-*.lo
+# C and CMake build products
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
 *.lib
-
-# Executables
+*.so
+*.so.*
+*.dll
 *.exe
-*.out
-*.app
-
-# Build directories
-build/
-Build/
-build-*/
-
-# CMake generated files
+*.pdb
+*.pch
+*.gch
 CMakeFiles/
 CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
 compile_commands.json
-
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
 Testing/
 .cache/
+
+# Raw experiment .log and .time files under records/ are intentional evidence.

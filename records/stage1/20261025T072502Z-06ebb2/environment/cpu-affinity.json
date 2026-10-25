@@ -1,0 +1,12 @@
+{
+  "chosen_linux_logical_cpu": 0,
+  "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "note": "WSL virtual CPU mapping to Windows P/E cores is not controlled."
+}

@@ -1,0 +1,54 @@
+Images space usage:
+
+REPOSITORY     TAG            IMAGE ID       CREATED       SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
+cs340-period   cb8deb9a176e   8f80860515f1   3 days ago    6.08GB    4.356GB       1.722GB       0
+<none>         <none>         8f47d8b9148f   4 years ago   6.03GB    4.356GB       1.673GB       0
+
+Containers space usage:
+
+CONTAINER ID   IMAGE     COMMAND   LOCAL VOLUMES   SIZE      CREATED   STATUS    NAMES
+
+Local Volumes space usage:
+
+VOLUME NAME   LINKS     SIZE
+
+Build cache usage: 0B
+
+CACHE ID   CACHE TYPE   SIZE      CREATED   LAST USED   USAGE     SHARED
+Filesystem         1B-blocks       Used     Available Use% Mounted on
+/dev/sdd       1081101176832 8235667456 1017873154048   1% /
+Untagged: cs340-period:cb8deb9a176e
+Deleted: sha256:8f80860515f147a56c351573e1ecb12e66068f0fe07bf128890f9a38ddb8c6b5
+Deleted: sha256:e9bbe5eb08b9704b50b4582aea8c37c16e8ea43380af55d34f0f585ceba0bdd3
+Deleted: sha256:51e42088ddfc2f1bf795880d3f58a5e5487cd62ab9d9b339465c71de164bb77e
+Deleted: sha256:c15845a597cbba3fe98d5c7df39c8d73ebb2786c5a50a186ef4727ff09f63322
+Deleted: sha256:fa6664de21f31a9b1cad1dc7c35e64bf81bf1e48ff224a6220b81ce5c75be51f
+Deleted: sha256:b1d150a68f020a23d0e64839959a10fa93aba780b91d115f91114ada9f08b02c
+Deleted: sha256:03a124432fb71e5c636005b8a0116626b33a562f90241ff76d13478a1a121129
+Deleted: sha256:f92bfe0ecfeed4fbdff69d5a8370819b292b65935259f641c995898b2e94f2de
+Deleted: sha256:28e5e84279e787355df9ad517f1a3d63af16c6c4ce43f702801c0da7c389705e
+Deleted: sha256:df69136ad13f7d6680abf9e3d27f6c9e9e7abe9ebca737b155aa7370c88766aa
+Deleted: sha256:0f09154c0a58d5a52f05f9d5cd8e3b3346b768a203bc883aa6e4563ffe64a39a
+Deleted: sha256:24e01a724c27910245d07d0ed1d1ec0308cbad1b45b1e42836f17f2cde7c5e5a
+Untagged: wcventure/period@sha256:8f47d8b9148f2db579627842026e722d0f205ddeab13e70ee41a8df3dbd59fbc
+Deleted: sha256:8f47d8b9148f2db579627842026e722d0f205ddeab13e70ee41a8df3dbd59fbc
+Images space usage:
+
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
+
+Containers space usage:
+
+CONTAINER ID   IMAGE     COMMAND   LOCAL VOLUMES   SIZE      CREATED   STATUS    NAMES
+
+Local Volumes space usage:
+
+VOLUME NAME   LINKS     SIZE
+
+Build cache usage: 0B
+
+CACHE ID   CACHE TYPE   SIZE      CREATED   LAST USED   USAGE     SHARED
+Filesystem         1B-blocks       Used     Available Use% Mounted on
+/dev/sdd       1081101176832 2157244416 1023951577088   1% /
+748K	/var/lib/containerd
+204K	/var/lib/docker
+The WSL distribution and VHDX were preserved. Windows VHDX compaction was not attempted.

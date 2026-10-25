@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "record": "records/stage1/20261025T072502Z-06ebb2",
+  "verified_file_hashes": 372,
+  "correctness_trials": 45,
+  "performance_trials": 75,
+  "extension_trials": 30,
+  "reference_checks": 10,
+  "statistics_recomputed": true,
+  "stdout_hashes_recomputed": true
+}

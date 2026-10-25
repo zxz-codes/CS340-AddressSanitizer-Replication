@@ -1,0 +1,2 @@
+$ /root/.cache/cs340-asan/venv/bin/lit --version
+lit 14.0.6

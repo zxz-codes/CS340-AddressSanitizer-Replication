@@ -1,0 +1,2 @@
+$ taskset -c 0 /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases heap 7
+completed

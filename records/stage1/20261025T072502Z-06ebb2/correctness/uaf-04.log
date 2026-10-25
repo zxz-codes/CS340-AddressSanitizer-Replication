@@ -1,0 +1,56 @@
+$ taskset -c 0 /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases uaf 0
+=================================================================
+==709==ERROR: AddressSanitizer: heap-use-after-free on address 0x603000000040 at pc 0x0000004da23b bp 0x7ffc33be7cf0 sp 0x7ffc33be7ce8
+READ of size 4 at 0x603000000040 thread T0
+    #0 0x4da23a in exercise /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:15:54
+    #1 0x4d9f07 in main /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:23:5
+    #2 0x7532c9029d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+    #3 0x7532c9029e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+    #4 0x41c314 in _start (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x41c314) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32)
+
+0x603000000040 is located 0 bytes inside of 32-byte region [0x603000000040,0x603000000060)
+freed by thread T0 here:
+    #0 0x49eeb2 in free (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x49eeb2) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32)
+    #1 0x4da1e1 in exercise /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:15:38
+    #2 0x4d9f07 in main /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:23:5
+    #3 0x7532c9029d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+
+previously allocated by thread T0 here:
+    #0 0x49f15e in __interceptor_malloc (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x49f15e) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32)
+    #1 0x4d9fe3 in exercise /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:9:14
+    #2 0x4d9f07 in main /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:23:5
+    #3 0x7532c9029d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+
+SUMMARY: AddressSanitizer: heap-use-after-free /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:15:54 in exercise
+Shadow bytes around the buggy address:
+  0x0c067fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c067fff8000: fa fa 00 00 00 fa fa fa[fd]fd fd fd fa fa fa fa
+  0x0c067fff8010: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8020: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8030: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8040: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8050: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==709==ABORTING

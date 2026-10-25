@@ -1,0 +1,3 @@
+$ llvm-size-14 /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/asan/MultiSource/Benchmarks/Olden/perimeter/perimeter
+   text	   data	    bss	    dec	    hex	filename
+1094852	  13792	9779604	10888248	 a62438	/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/asan/MultiSource/Benchmarks/Olden/perimeter/perimeter

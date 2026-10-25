@@ -1,0 +1,50 @@
+$ taskset -c 0 /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases stack 8
+=================================================================
+==685==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7fff9c878ce0 at pc 0x0000004da148 bp 0x7fff9c878c90 sp 0x7fff9c878c88
+READ of size 4 at 0x7fff9c878ce0 thread T0
+    #0 0x4da147 in exercise /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:13:45
+    #1 0x4d9f07 in main /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:23:5
+    #2 0x79d9c0029d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+    #3 0x79d9c0029e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+    #4 0x41c314 in _start (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x41c314) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32)
+
+Address 0x7fff9c878ce0 is located in stack of thread T0 at offset 64 in frame
+    #0 0x4d9f3f in exercise /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:7
+
+  This frame has 1 object(s):
+    [32, 64) 'stack_buffer' (line 8) <== Memory access at offset 64 overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:13:45 in exercise
+Shadow bytes around the buggy address:
+  0x100073907140: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100073907150: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100073907160: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100073907170: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100073907180: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x100073907190: 00 00 00 00 f1 f1 f1 f1 00 00 00 00[f3]f3 f3 f3
+  0x1000739071a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x1000739071b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x1000739071c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x1000739071d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x1000739071e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==685==ABORTING

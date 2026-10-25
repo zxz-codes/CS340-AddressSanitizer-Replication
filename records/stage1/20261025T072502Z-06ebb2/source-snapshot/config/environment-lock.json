@@ -1,0 +1,20 @@
+{
+  "paper": "AddressSanitizer: A Fast Address Sanity Checker (USENIX ATC 2012)",
+  "distribution": "Ubuntu-22.04",
+  "benchmark_url": "https://github.com/llvm/llvm-test-suite.git",
+  "benchmark_branch_provenance": "release/14.x",
+  "benchmark_commit": "d52a93a891cde7a76aca63f7a201c5a5fe459f41",
+  "compiler": "clang-14",
+  "symbolizer": "llvm-symbolizer-14",
+  "lit_version": "14.0.6",
+  "runs": 5,
+  "benchmark_subdirectory": "MultiSource/Benchmarks/Olden",
+  "planned_benchmarks": ["bisort", "mst", "perimeter", "treeadd", "tsp"],
+  "common_cflags": "-O2 -g -fno-omit-frame-pointer -fno-pie",
+  "common_ldflags": "-no-pie",
+  "asan_cflags": "-fsanitize=address -fsanitize-address-use-after-return=never -fno-sanitize-address-use-after-scope",
+  "asan_default_options": "detect_leaks=0:detect_stack_use_after_return=0:halt_on_error=1:symbolize=1",
+  "asan_paper_like_options": "detect_leaks=0:detect_stack_use_after_return=0:halt_on_error=1:symbolize=1:redzone=32:max_redzone=32:quarantine_size_mb=0:thread_local_quarantine_size_kb=0:malloc_context_size=0",
+  "extension_factor": "minimum heap redzone size: 16, 32, 128; max_redzone=2048, quarantine=0, malloc_context_size=0 held fixed",
+  "notes": "Modern implementation on substitute open-source workloads. Not an exact SPEC CPU2006 or LLVM 3.1 replication. No upstream benchmark source edits."
+}

@@ -1,0 +1,1 @@
+$ git -C /root/.cache/cs340-asan/llvm-test-suite diff --exit-code

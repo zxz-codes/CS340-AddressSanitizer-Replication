@@ -1,0 +1,25 @@
+$ taskset -c 0 /root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases double_free 0
+=================================================================
+==721==ERROR: AddressSanitizer: attempting double-free on 0x603000000040 in thread T0:
+    #0 0x49eeb2 in free (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x49eeb2) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32)
+    #1 0x4da178 in exercise /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c
+    #2 0x4d9f07 in main /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:23:5
+    #3 0x7615dea29d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+    #4 0x7615dea29e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+    #5 0x41c314 in _start (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x41c314) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32)
+
+0x603000000040 is located 0 bytes inside of 32-byte region [0x603000000040,0x603000000060)
+freed by thread T0 here:
+    #0 0x49eeb2 in free (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x49eeb2) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32)
+    #1 0x4da20f in exercise /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:16:46
+    #2 0x4d9f07 in main /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:23:5
+    #3 0x7615dea29d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+
+previously allocated by thread T0 here:
+    #0 0x49f15e in __interceptor_malloc (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x49f15e) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32)
+    #1 0x4d9fe3 in exercise /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:9:14
+    #2 0x4d9f07 in main /mnt/c/Users/31236/Desktop/OS论文复现/examples/memory_cases.c:23:5
+    #3 0x7615dea29d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 6a6cb5a80fd5e5bb5bf3aeaa111add98e88843a5)
+
+SUMMARY: AddressSanitizer: double-free (/root/.cache/cs340-asan/build/20261025T072502Z-06ebb2/memory_cases+0x49eeb2) (BuildId: 0bff40afb430e842e1148d8dc4ec5cc657344e32) in free
+==721==ABORTING

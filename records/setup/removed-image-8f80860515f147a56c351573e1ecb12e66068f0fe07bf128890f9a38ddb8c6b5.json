@@ -1,0 +1,59 @@
+[
+    {
+        "Architecture": "amd64",
+        "Config": {
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "Env": [
+                "PATH=/opt/period-src/clang+llvm/bin:/opt/period-src/tool/SVF/Release-build/bin:/workdir/PERIOD/clang+llvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LD_LIBRARY_PATH=/opt/period-src/clang+llvm/lib",
+                "ROOT_DIR=/opt/period-src"
+            ],
+            "Labels": {
+                "org.opencontainers.image.revision": "cb8deb9a176e5bb292d70d46557dd61dc0e98069",
+                "org.opencontainers.image.source": "https://github.com/wcventure/PERIOD"
+            },
+            "WorkingDir": "/opt/period-src"
+        },
+        "Created": "2026-10-22T03:09:36.402410512+08:00",
+        "Descriptor": {
+            "digest": "sha256:8f80860515f147a56c351573e1ecb12e66068f0fe07bf128890f9a38ddb8c6b5",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "size": 3638
+        },
+        "Id": "sha256:8f80860515f147a56c351573e1ecb12e66068f0fe07bf128890f9a38ddb8c6b5",
+        "Metadata": {
+            "LastTagTime": "2026-10-21T19:09:36.534035307Z"
+        },
+        "Os": "linux",
+        "Parent": "sha256:e9bbe5eb08b9704b50b4582aea8c37c16e8ea43380af55d34f0f585ceba0bdd3",
+        "RepoDigests": [
+            "cs340-period@sha256:8f80860515f147a56c351573e1ecb12e66068f0fe07bf128890f9a38ddb8c6b5"
+        ],
+        "RepoTags": [
+            "cs340-period:cb8deb9a176e"
+        ],
+        "RootFS": {
+            "Layers": [
+                "sha256:b43408d5f11b7b2faf048ae4eb25c296536c571fb2f937b4f1c3883386e93d64",
+                "sha256:23135df75b44a66efa9d8dc1a10051768c27bd95388f436eb9553e0eb17211f6",
+                "sha256:fe6d8881187d429af3f636c574911690455825998c9f366e985eab646665e711",
+                "sha256:194e8ae91b4c643809d4b201a944fb1fc3cad588868fc54f0beb7eb9aa893437",
+                "sha256:098e000f7fcc9b1ccc377f3e8c5db751db5a6b09918441aa471907c2ce0fd004",
+                "sha256:5bedc2c86604437a8de10d29f654bb759a5d1288811b8339f3cba83cc94b6363",
+                "sha256:ba9344cbf99de36b2bcc10392865d93189568fcaca32dea6f49920a6cf597d1c",
+                "sha256:435af7f0628caf9aea6688478eeee66478564f0e65c7f95ff4ac1764aa894c57",
+                "sha256:b959228947d7b2e705390390663f741d1dedeab7da8f06a7d110f78c12735ecb",
+                "sha256:f2ff494d19d42d49c6034dcb6bb0932fe6fdca55deb88b305ba48304d6242960",
+                "sha256:9826a5854c734da838a47e2b7cd12ce3883bf952e0d4a1499e67e2255f44610e",
+                "sha256:852e65d8940af7681ac5daf89cbf1136d908743a1d41ff515d169fe92215eba8",
+                "sha256:63e3088022b8186d5be0e447596b501a21b7ceb57321b36eb8ef214971da07c2",
+                "sha256:1d1740c6184ed2afc25a82209d819a4d668992db163f0939123ebba9175af7e6",
+                "sha256:6a7ecf518adbfae07249479eab93f57cc333cd2efe89eb18c21ea1cc966da578"
+            ],
+            "Type": "layers"
+        },
+        "Size": 1683741981
+    }
+]

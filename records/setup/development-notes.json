@@ -1,0 +1,45 @@
+[
+  {
+    "run": "20261025T064310Z-e781e4",
+    "status": {
+      "passed": false,
+      "phase": "native CMake configuration",
+      "reason": "LLVM test-suite searches for unversioned llvm-size; Ubuntu provides the tool in the LLVM-specific bin directory. Fixed runner PATH using llvm-config-14 --bindir. No performance measurements were taken in this attempt.",
+      "correctness_passed": true
+    },
+    "local_archive": "archive/ASan-development-20261025/20261025T064310Z-e781e4"
+  },
+  {
+    "run": "20261025T065716Z-afee59",
+    "status": {
+      "passed": false,
+      "phase": "native reference validation",
+      "reason": "LLVM 14 Olden generated tests require lit parameter traditional-output=true. Without it timeit does not redirect the expected .out file. Upstream sources were not changed; runner now supplies the required compatibility parameter. No performance data from this attempt are used.",
+      "correctness_passed": true,
+      "native_build_passed": true
+    },
+    "local_archive": "archive/ASan-development-20261025/20261025T065716Z-afee59"
+  },
+  {
+    "run": "20261025T070731Z-803ebb",
+    "status": {
+      "passed": false,
+      "phase": "native reference validation",
+      "reason": "The LLVM 14 top-level lit.cfg ignores the attempted traditional-output CLI parameter. Direct subtree configuration omits the parent traditional-output configuration. The corrected runner explicitly writes config.traditional_output=True into a generated build-tree lit.local.cfg. Upstream C sources remain unchanged. No performance data from this attempt are used.",
+      "correctness_passed": true,
+      "native_build_passed": true
+    },
+    "local_archive": "archive/ASan-development-20261025/20261025T070731Z-803ebb"
+  },
+  {
+    "run": "20261025T071914Z-5d6344",
+    "status": {
+      "passed": false,
+      "phase": "post-run output digest validation",
+      "reason": "Logger command header contained GNU time format newlines; output digest included part of the varying command header. Fixed header escaping. Replaced timeout wait polling with pipe/communicate timing and moved live timer output to ext4, removing polling and DrvFS logging latency. This exploratory attempt is excluded from the report and rerun in full.",
+      "correctness_passed": true,
+      "upstream_reference_validation_passed": true
+    },
+    "local_archive": "archive/ASan-development-20261025/20261025T071914Z-5d6344"
+  }
+]
