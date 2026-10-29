@@ -1,3 +1,9 @@
 * text=auto eol=lf
 *.pdf binary
 *.png binary
+
+# Recorded experiment data must keep its exact bytes: the SHA-256 manifest is
+# computed on the files as written by the runner (CSV uses CRLF), so Git must
+# not rewrite line endings on commit or checkout. Otherwise verify_results.py
+# fails the manifest check on a clean clone.
+*.csv binary
