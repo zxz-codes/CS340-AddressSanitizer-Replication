@@ -1,0 +1,20 @@
+Checked commit: 40a3c800b6030bb6b67611164a0f3d808b6de2f8
+Source: fresh remote Git clone of https://github.com/zxz-codes/CS340-AddressSanitizer-Replication.git
+Environment: existing Ubuntu-22.04 WSL distribution
+Command: python3 scripts/verify_results.py
+
+{
+  "passed": true,
+  "record": "records/stage1/20261025T072502Z-06ebb2",
+  "verified_file_hashes": 372,
+  "correctness_trials": 45,
+  "performance_trials": 75,
+  "extension_trials": 30,
+  "reference_checks": 10,
+  "statistics_recomputed": true,
+  "stdout_hashes_recomputed": true
+}
+
+Exit code: 0
+Command after audit: git status --short
+Output after audit: (empty)

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-30",
+  "repository": "https://github.com/zxz-codes/CS340-AddressSanitizer-Replication",
+  "checked_commit": "40a3c800b6030bb6b67611164a0f3d808b6de2f8",
+  "method": "Fresh remote Git clone of merged main, performed with WSL Git after Windows TLS failures; no manual file repair.",
+  "command": "python3 scripts/verify_results.py",
+  "exit_code": 0,
+  "working_tree_clean_after_audit": true,
+  "result": {
+    "passed": true,
+    "record": "records/stage1/20261025T072502Z-06ebb2",
+    "verified_file_hashes": 372,
+    "correctness_trials": 45,
+    "performance_trials": 75,
+    "extension_trials": 30,
+    "reference_checks": 10,
+    "statistics_recomputed": true,
+    "stdout_hashes_recomputed": true
+  },
+  "pr1": {
+    "number": 1,
+    "state": "merged",
+    "merge_method": "merge",
+    "preserved_original_commits": [
+      "0a5d9831423aaf30202824caa34ba0e7fbdad0f3",
+      "f7b56aae5fbb7913bf316ff0a290657577f5ef90"
+    ]
+  },
+  "pr2": {
+    "number": 2,
+    "head_sha": "f9729292d151ab7516d776be0696166f6c57e7d1",
+    "state": "open",
+    "review_state": "CHANGES_REQUESTED",
+    "review_id": 5709326926,
+    "review_url": "https://github.com/zxz-codes/CS340-AddressSanitizer-Replication/pull/2#pullrequestreview-5709326926"
+  }
+}
