@@ -173,10 +173,12 @@ llvm-test-suite `MultiSource/Benchmarks/Olden` 的五个代替性工作负载，
 （S6 的 `runs`）。S1 同时明确说明这些是 substitute-workload
 measurements，不重现 SPEC CPU2006 总体结果。
 
-因此，可以说“在该记录、这些程序、输入和配置下，五项 Modern ASan
-配对倍率均高于对应的 Paper-like 配对倍率”，不能据此推出其他程序、
+因此，可以说“在该记录、这些程序、输入和配置下，五个程序的 Modern ASan
+配对倍率均值均高于对应的 Paper-like 配对倍率均值”，不能据此推出其他程序、
 其他数据集、其他机器、其他编译器或任何 SPEC 总体性能结论。本报告
 的逐轮统计特别只覆盖 `bisort`、`mst` 和 `asan-modern`。
+这里比较的是五轮均值，不表示每一轮都更高；S2 中 `mst` 第 4、5 轮的
+Modern ASan 配对倍率低于同轮 Paper-like 配对倍率。
 
 ### 存疑之处与不作因果结论
 
@@ -184,10 +186,12 @@ S4 与 S3 中两套配置的选项并非只差一个参数：S6 的
 `asan_default_options` 与 `asan_paper_like_options` 同时包含
 redzone、quarantine、thread-local quarantine 和 malloc context
 等差异。仅凭现有图和时间记录，无法判断图中差异由哪一项配置造成，
-也没有本记录内的内存、指令数或 CPU 事件数据支持具体机制。
+S2 和 S3 已记录峰值 RSS（`max_rss_kib`），但这些数据不足以解释耗时
+差异；本记录未采集指令数或 CPU 事件，也未通过单因素实验分离两套
+配置中各项差异的影响。峰值 RSS 不是论文的 VmPeak 指标。
 
 **证据不足，不下结论。** 本报告不把柱高差异归因于 redzone、
-quarantine、内存占用、分配频率或其他未直接测量的原因，也不推断
+quarantine、内存占用或分配频率等具体机制，也不推断
 该差异在其他环境中必然复现。
 
 ## 复算方法
