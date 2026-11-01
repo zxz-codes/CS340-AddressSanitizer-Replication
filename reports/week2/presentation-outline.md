@@ -53,11 +53,12 @@
 | 编译选项 | clang -O2 | 两个版本都用 `-O2 -g -fno-omit-frame-pointer -fno-pie`；ASan 版关闭 use-after-return 和 use-after-scope（R4） | 尽量让插桩范围贴近 2012 年版本 |
 | ASan 运行参数 | redzone 32、不做栈回溯、quarantine 0 | 两套：modern（保留运行库默认的 redzone、quarantine、分配栈记录，只关泄漏检测）和 paper-like（`redzone=max_redzone=32`、`quarantine_size_mb=0`、`malloc_context_size=0`）（R4） | paper-like 只是"接近"论文设置，不是 2012 年的二进制 |
 | 内存指标 | 进程结束时 `/proc/self/status` 的 VmPeak | GNU time 的峰值 RSS（KiB）（R4） | 两者不能直接对比 |
-| 覆盖范围 | 整个 SPEC 套件 + 只插桩写操作模式 | 5 个程序，只测完整读写插桩，每个配置 5 次（R1） | 代表性有限 |
+| 覆盖范围 | SPEC CPU2006 中的 C/C++ 基准 + 只插桩写操作模式 | 5 个程序，只测完整读写插桩，每个配置 5 次（R1） | 代表性有限 |
 
 ### 1.4 哪些能对照，哪些不能直接等同
 
-- **能对照的**：检测机制和报警行为；"先算每轮 ASan/native 倍率再汇总"的测量方法；"redzone 越大资源开销越高"这一类定性主张。
+- **能对照的**：检测机制和报警行为；redzone 设置影响资源开销的定性主张。
+- **本组统计口径**：本组采用逐轮计算 ASan/native 倍率再汇总的方法；原论文未明确说明采用相同的逐轮配对流程。
 - **不能直接等同的**：
   - 7.663 或 2.243 和论文的 1.73 不是同一个量。我们的数是 5 个 Olden 程序的等权算术平均（R7），不是 SPEC 分数；
   - 峰值 RSS 和 VmPeak 不能对比；
