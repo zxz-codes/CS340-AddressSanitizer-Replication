@@ -1,0 +1,298 @@
+{
+  "bisort-ref": {
+    "name": "bisort",
+    "size": "ref",
+    "test_relative": "MultiSource/Benchmarks/Olden/bisort/bisort.test",
+    "run_template": "cd %S ; %S/bisort 700000",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/bisort ; /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/bisort/bisort 700000",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/bisort ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/bisort/bisort 700000",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/bisort ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/bisort/bisort 700000"
+    },
+    "binary_sha256": {
+      "native": "decead89704720ba07923b1207d46a51390cd702f5c61dbfe053c38479e7e7e0",
+      "asan-modern": "29fa1176ba08ea1cb85a7d3aa6464f0f13c8316d5117e5147a5ad9bf7f892700",
+      "asan-paper-like": "29fa1176ba08ea1cb85a7d3aa6464f0f13c8316d5117e5147a5ad9bf7f892700"
+    },
+    "reference_stdout_sha256": "cce90098d9fd0d1553714a4b78b81db204e36f175c89ab12fe04e6c9bd49f8b3",
+    "reference_kind": "upstream"
+  },
+  "mst-ref": {
+    "name": "mst",
+    "size": "ref",
+    "test_relative": "MultiSource/Benchmarks/Olden/mst/mst.test",
+    "run_template": "cd %S ; %S/mst 1000",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/mst ; /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/mst/mst 1000",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/mst ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/mst/mst 1000",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/mst ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/mst/mst 1000"
+    },
+    "binary_sha256": {
+      "native": "dbf08622f788d5312ed5414f5a0a90c78355479d81136eff66e1b7fd0d70522e",
+      "asan-modern": "1bfb0ba3fe79f7b52f8525728abbc04d93c301afc1b708eb8f0ee29a05164c3c",
+      "asan-paper-like": "1bfb0ba3fe79f7b52f8525728abbc04d93c301afc1b708eb8f0ee29a05164c3c"
+    },
+    "reference_stdout_sha256": "d1585e1218075cd6a33b758512882a3d0180fe0edaa60aa57d8aba3f375f934d",
+    "reference_kind": "upstream"
+  },
+  "perimeter-ref": {
+    "name": "perimeter",
+    "size": "ref",
+    "test_relative": "MultiSource/Benchmarks/Olden/perimeter/perimeter.test",
+    "run_template": "cd %S ; %S/perimeter 10",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/perimeter ; /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/perimeter/perimeter 10",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/perimeter ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/perimeter/perimeter 10",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/perimeter ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/perimeter/perimeter 10"
+    },
+    "binary_sha256": {
+      "native": "c4a98716ec18b9756c364b6452895bf1a56a40fc70ea974b9357e2cbf3848c72",
+      "asan-modern": "726dbe7ac853bbff720b7d441388a341f8ecb8becec91dd09ae66f37c86623d1",
+      "asan-paper-like": "726dbe7ac853bbff720b7d441388a341f8ecb8becec91dd09ae66f37c86623d1"
+    },
+    "reference_stdout_sha256": "08ea773fda7a7dea116b7ce3bf9ed1d40685d630adeffd93aaa366c3eb880ac2",
+    "reference_kind": "upstream"
+  },
+  "treeadd-ref": {
+    "name": "treeadd",
+    "size": "ref",
+    "test_relative": "MultiSource/Benchmarks/Olden/treeadd/treeadd.test",
+    "run_template": "cd %S ; %S/treeadd 22",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/treeadd ; /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/treeadd/treeadd 22",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd/treeadd 22",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd/treeadd 22"
+    },
+    "binary_sha256": {
+      "native": "409be0e54028c8de742fee31a56cb73c6085e84e974f43780e0ad3a4e1150336",
+      "asan-modern": "06fd4c29c8e88ceaf554174a5c911ef6f1699d7817b0dddf11dc13de081dab4d",
+      "asan-paper-like": "06fd4c29c8e88ceaf554174a5c911ef6f1699d7817b0dddf11dc13de081dab4d"
+    },
+    "reference_stdout_sha256": "c9406db3a189f935215fcdf7992074b8e5f6c0b7dbe7ab3e64da0311e6687147",
+    "reference_kind": "upstream"
+  },
+  "tsp-ref": {
+    "name": "tsp",
+    "size": "ref",
+    "test_relative": "MultiSource/Benchmarks/Olden/tsp/tsp.test",
+    "run_template": "cd %S ; %S/tsp 1024000",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/tsp ; /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Olden/tsp/tsp 1024000",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp/tsp 1024000",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp/tsp 1024000"
+    },
+    "binary_sha256": {
+      "native": "eea9442ae859878f656ae7f6226ecf14ead70e9b01aab0326e9eb6b3ab5cff4b",
+      "asan-modern": "f21b140cc0c743f1feaa6f7445f4aa3f7ca014739b57d65cd4404ea1cd244e67",
+      "asan-paper-like": "f21b140cc0c743f1feaa6f7445f4aa3f7ca014739b57d65cd4404ea1cd244e67"
+    },
+    "reference_stdout_sha256": "151c77310f2579ce21687440dc5f1ccbe4e900cafb4b21d42e3fdd60f378f614",
+    "reference_kind": "upstream"
+  },
+  "bullet-ref": {
+    "name": "bullet",
+    "size": "ref",
+    "test_relative": "MultiSource/Benchmarks/Bullet/bullet.test",
+    "run_template": "cd %S ; %S/bullet",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Bullet ; /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/Bullet/bullet",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet/bullet",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet/bullet"
+    },
+    "binary_sha256": {
+      "native": "5eabd3acebefcd73fe5b39e82d949616e43fb59749f59b2db69d405714049dd1",
+      "asan-modern": "6a7c0207b59c3611b1788a163375d960f78d2d0085aee614eb1d6145470ab606",
+      "asan-paper-like": "6a7c0207b59c3611b1788a163375d960f78d2d0085aee614eb1d6145470ab606"
+    },
+    "reference_stdout_sha256": "6c44c9da97a3c4797cf9bb59f9eaca7fa914d30577d0c3b645ebc61601d47c79",
+    "reference_kind": "upstream"
+  },
+  "pairlocalalign-ref": {
+    "name": "pairlocalalign",
+    "size": "ref",
+    "test_relative": "MultiSource/Benchmarks/mafft/pairlocalalign.test",
+    "run_template": "cd %S ; %S/pairlocalalign -b 62 -g 0.100 -f 2.00 -h 0.100 -L < pyruvate_decarboxylase.fasta",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft ; /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft/pairlocalalign -b 62 -g 0.100 -f 2.00 -h 0.100 -L < pyruvate_decarboxylase.fasta",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/mafft ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/mafft/pairlocalalign -b 62 -g 0.100 -f 2.00 -h 0.100 -L < pyruvate_decarboxylase.fasta",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/mafft ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/mafft/pairlocalalign -b 62 -g 0.100 -f 2.00 -h 0.100 -L < pyruvate_decarboxylase.fasta"
+    },
+    "binary_sha256": {
+      "native": "bc95fca67d0c60ff6769d2f43424c1ac2ce5594da77574e89a1a22c52d494ee6",
+      "asan-modern": "8c0385fa5340225b5d40d6a04d20220d3e6526fcb2aac1a0518f6d0bbb5aba39",
+      "asan-paper-like": "8c0385fa5340225b5d40d6a04d20220d3e6526fcb2aac1a0518f6d0bbb5aba39"
+    },
+    "reference_stdout_sha256": "0e061c465538dcd0167ec80285b3f745dcafcff1a24f716aedd3f4cc07ea82df",
+    "reference_kind": "upstream"
+  },
+  "security-sha-ref": {
+    "name": "security-sha",
+    "size": "ref",
+    "test_relative": "MultiSource/Benchmarks/MiBench/security-sha/security-sha.test",
+    "run_template": "cd %S ; %S/security-sha input_large.asc",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/MiBench/security-sha ; /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/MiBench/security-sha/security-sha input_large.asc",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/MiBench/security-sha ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/MiBench/security-sha/security-sha input_large.asc",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/MiBench/security-sha ; /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/MiBench/security-sha/security-sha input_large.asc"
+    },
+    "binary_sha256": {
+      "native": "cfb6d2621ad35db0d7042ca6d6b5794d05216939f5ec04792b6a7edd43caf927",
+      "asan-modern": "466fbd5279dbd8583ca427494dade743681e36ba4fc831d4d0fa79881bf9b7dc",
+      "asan-paper-like": "466fbd5279dbd8583ca427494dade743681e36ba4fc831d4d0fa79881bf9b7dc"
+    },
+    "reference_stdout_sha256": "43fcd8e530aad1fa60641078ff24dfee5510ee160d86a6915e2eb9d6eec5afde",
+    "reference_kind": "upstream"
+  },
+  "bisort-large": {
+    "name": "bisort",
+    "size": "large",
+    "test_relative": "MultiSource/Benchmarks/Olden/bisort/bisort.test",
+    "run_template": "cd %S ; %S/bisort 3000000",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/large-native/MultiSource/Benchmarks/Olden/bisort ; /root/.cache/cs340-asan/build/stage2/large-native/MultiSource/Benchmarks/Olden/bisort/bisort 3000000",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/bisort ; /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/bisort/bisort 3000000",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/bisort ; /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/bisort/bisort 3000000"
+    },
+    "binary_sha256": {
+      "native": "b96af2fe8119c9e9ba167be1c3ca1b7c1fa75267428967705a5552fda719939a",
+      "asan-modern": "afccbc0c9859a155a78f6c9acc19dafb72c7b84961e2060b8632a4461087f85f",
+      "asan-paper-like": "afccbc0c9859a155a78f6c9acc19dafb72c7b84961e2060b8632a4461087f85f"
+    },
+    "reference_stdout_sha256": "bb08f6f4a4da514215ac39e60ec08a5617be226867ee99b183a1d512f4646521",
+    "reference_kind": "gcc-differential",
+    "oracle": {
+      "argv": [
+        "taskset",
+        "-c",
+        "0",
+        "bash",
+        "-c",
+        "cd /root/.cache/cs340-asan/build/stage2/large-oracle/MultiSource/Benchmarks/Olden/bisort ; /root/.cache/cs340-asan/build/stage2/large-oracle/MultiSource/Benchmarks/Olden/bisort/bisort 3000000"
+      ],
+      "cwd": "/mnt/c/Users/31236/Desktop/OS论文复现/tmp/stage2-work",
+      "returncode": 0,
+      "elapsed_seconds": 1.526119769999994,
+      "timed_out": false,
+      "stdout_raw_bytes": 218862,
+      "stderr_raw_bytes": 0,
+      "stdout": "oracle/bisort-large.stdout.gz",
+      "stderr": "oracle/bisort-large.stderr.gz"
+    },
+    "oracle_binary_sha256": "3153e2101b7b62fe739c0e858c628bdc65b23b72a89c0263f95108e268989dbe",
+    "upstream_reference_sha256": "9dd770c691f91cf76f1612eb1f2b3c2e84bb112cb7e5b047c7c5e8f7303b9531"
+  },
+  "mst-large": {
+    "name": "mst",
+    "size": "large",
+    "test_relative": "MultiSource/Benchmarks/Olden/mst/mst.test",
+    "run_template": "cd %S ; %S/mst 4000",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/large-native/MultiSource/Benchmarks/Olden/mst ; /root/.cache/cs340-asan/build/stage2/large-native/MultiSource/Benchmarks/Olden/mst/mst 4000",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/mst ; /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/mst/mst 4000",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/mst ; /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/mst/mst 4000"
+    },
+    "binary_sha256": {
+      "native": "5e5c958b67aa3881b6bb0aa874fd6290e60ba0a05ef2186b5b6dfe7e6ab18f0b",
+      "asan-modern": "5947ea716ecb8269fc9764609fd4ae8a048ae92f265ac6db2c39f7c3b8dce51d",
+      "asan-paper-like": "5947ea716ecb8269fc9764609fd4ae8a048ae92f265ac6db2c39f7c3b8dce51d"
+    },
+    "reference_stdout_sha256": "86c7aefaa67beb44a364ae38d9da1ae70bbfce9c65e655b03243ee2b4559eaaf",
+    "reference_kind": "gcc-differential",
+    "oracle": {
+      "argv": [
+        "taskset",
+        "-c",
+        "0",
+        "bash",
+        "-c",
+        "cd /root/.cache/cs340-asan/build/stage2/large-oracle/MultiSource/Benchmarks/Olden/mst ; /root/.cache/cs340-asan/build/stage2/large-oracle/MultiSource/Benchmarks/Olden/mst/mst 4000"
+      ],
+      "cwd": "/mnt/c/Users/31236/Desktop/OS论文复现/tmp/stage2-work",
+      "returncode": 0,
+      "elapsed_seconds": 0.8382172419999989,
+      "timed_out": false,
+      "stdout_raw_bytes": 168,
+      "stderr_raw_bytes": 0,
+      "stdout": "oracle/mst-large.stdout.gz",
+      "stderr": "oracle/mst-large.stderr.gz"
+    },
+    "oracle_binary_sha256": "021ae19662fee7ddd0d17ad83a1f7b8796b5802133020a22299430a56952adc7",
+    "upstream_reference_sha256": "e1ec306bc51c83d5c42d5ee3e6d7d589890f6bb90757a4236b9d95d5dc4b2b39"
+  },
+  "perimeter-large": {
+    "name": "perimeter",
+    "size": "large",
+    "test_relative": "MultiSource/Benchmarks/Olden/perimeter/perimeter.test",
+    "run_template": "cd %S ; %S/perimeter 11",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/large-native/MultiSource/Benchmarks/Olden/perimeter ; /root/.cache/cs340-asan/build/stage2/large-native/MultiSource/Benchmarks/Olden/perimeter/perimeter 11",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter ; /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter/perimeter 11",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter ; /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter/perimeter 11"
+    },
+    "binary_sha256": {
+      "native": "06684101e67e7712ff8e6d7ce7282437692929219d35d818b376b12789e69204",
+      "asan-modern": "e3952a14b4bf23d701ff204c13f444155b3494b4c0d0606027222f691d8258aa",
+      "asan-paper-like": "e3952a14b4bf23d701ff204c13f444155b3494b4c0d0606027222f691d8258aa"
+    },
+    "reference_stdout_sha256": "9272d88bc02ea32481ea38e83cb4ba91261efacb66000198a710cd6b4f763d4e",
+    "reference_kind": "gcc-differential",
+    "oracle": {
+      "argv": [
+        "taskset",
+        "-c",
+        "0",
+        "bash",
+        "-c",
+        "cd /root/.cache/cs340-asan/build/stage2/large-oracle/MultiSource/Benchmarks/Olden/perimeter ; /root/.cache/cs340-asan/build/stage2/large-oracle/MultiSource/Benchmarks/Olden/perimeter/perimeter 11"
+      ],
+      "cwd": "/mnt/c/Users/31236/Desktop/OS论文复现/tmp/stage2-work",
+      "returncode": 0,
+      "elapsed_seconds": 0.4312349100000006,
+      "timed_out": false,
+      "stdout_raw_bytes": 83,
+      "stderr_raw_bytes": 0,
+      "stdout": "oracle/perimeter-large.stdout.gz",
+      "stderr": "oracle/perimeter-large.stderr.gz"
+    },
+    "oracle_binary_sha256": "0997067b8436504e719f3f2a65f418f3fdb1338afe85c583ce0ed362bebe70b3",
+    "upstream_reference_sha256": "08f3e4915c6ad518dd6bc0bcf02934fc72ee51ffdbc89e354bb04de40b2eee9c"
+  },
+  "tsp-large": {
+    "name": "tsp",
+    "size": "large",
+    "test_relative": "MultiSource/Benchmarks/Olden/tsp/tsp.test",
+    "run_template": "cd %S ; %S/tsp 2048000",
+    "commands": {
+      "native": "cd /root/.cache/cs340-asan/build/stage2/large-native/MultiSource/Benchmarks/Olden/tsp ; /root/.cache/cs340-asan/build/stage2/large-native/MultiSource/Benchmarks/Olden/tsp/tsp 2048000",
+      "asan-modern": "cd /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/tsp ; /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/tsp/tsp 2048000",
+      "asan-paper-like": "cd /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/tsp ; /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/tsp/tsp 2048000"
+    },
+    "binary_sha256": {
+      "native": "2483aeda7f001c3bf38b17b661bf55d237bb001be38f300c6781f9215afafc87",
+      "asan-modern": "84dc244aa5534ff7cbc2b405f321c2af425a45e2f7da89d637002721a19d8dcb",
+      "asan-paper-like": "84dc244aa5534ff7cbc2b405f321c2af425a45e2f7da89d637002721a19d8dcb"
+    },
+    "reference_stdout_sha256": "f10a7aae51db6850d9313a718cfbfc52f3257d017c211c1e02e9e5a1874bf160",
+    "reference_kind": "gcc-differential",
+    "oracle": {
+      "argv": [
+        "taskset",
+        "-c",
+        "0",
+        "bash",
+        "-c",
+        "cd /root/.cache/cs340-asan/build/stage2/large-oracle/MultiSource/Benchmarks/Olden/tsp ; /root/.cache/cs340-asan/build/stage2/large-oracle/MultiSource/Benchmarks/Olden/tsp/tsp 2048000"
+      ],
+      "cwd": "/mnt/c/Users/31236/Desktop/OS论文复现/tmp/stage2-work",
+      "returncode": 0,
+      "elapsed_seconds": 0.6281042929999927,
+      "timed_out": false,
+      "stdout_raw_bytes": 61,
+      "stderr_raw_bytes": 0,
+      "stdout": "oracle/tsp-large.stdout.gz",
+      "stderr": "oracle/tsp-large.stderr.gz"
+    },
+    "oracle_binary_sha256": "79795e86e480e5b24d8b298c9d4c162c058a15d210cbccc880605827a6591e9b",
+    "upstream_reference_sha256": "4a81dfd5f72936284c8bcc87854a6de39b0642d4591da331acfb907ad6e3870b"
+  }
+}

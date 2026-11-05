@@ -1,0 +1,58 @@
+{
+  "__version__": [
+    14,
+    0,
+    6
+  ],
+  "elapsed": 0.034468889236450195,
+  "tests": [
+    {
+      "code": "PASS",
+      "elapsed": 0.027147531509399414,
+      "metrics": {
+        "compile_time": 0.0628,
+        "exec_time": 0.008,
+        "hash": "cf5376e2c761c8e380c5c53c7e97179e",
+        "link_time": 0.0142,
+        "size": 24544,
+        "size..bss": 16,
+        "size..comment": 84,
+        "size..data": 16,
+        "size..debug_abbrev": 708,
+        "size..debug_addr": 232,
+        "size..debug_info": 1951,
+        "size..debug_line": 1187,
+        "size..debug_line_str": 510,
+        "size..debug_loclists": 1238,
+        "size..debug_rnglists": 27,
+        "size..debug_str": 948,
+        "size..debug_str_offsets": 604,
+        "size..dynamic": 480,
+        "size..dynstr": 134,
+        "size..dynsym": 240,
+        "size..eh_frame": 416,
+        "size..eh_frame_hdr": 100,
+        "size..fini": 13,
+        "size..fini_array": 8,
+        "size..gnu.hash": 36,
+        "size..gnu.version": 20,
+        "size..gnu.version_r": 64,
+        "size..got": 16,
+        "size..got.plt": 72,
+        "size..init": 27,
+        "size..init_array": 8,
+        "size..interp": 28,
+        "size..note.ABI-tag": 32,
+        "size..note.gnu.build-id": 36,
+        "size..note.gnu.property": 32,
+        "size..plt": 112,
+        "size..rela.dyn": 72,
+        "size..rela.plt": 144,
+        "size..rodata": 91,
+        "size..text": 2124
+      },
+      "name": "test-suite :: MultiSource/Benchmarks/MiBench/security-sha/security-sha.test",
+      "output": "\n/root/.cache/cs340-asan/build/stage2/ref-native/tools/timeit-target --limit-core 0 --limit-cpu 7200 --timeout 7200 --limit-file-size 104857600 --limit-rss-size 838860800 --append-exitstatus --redirect-output /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/MiBench/security-sha/Output/security-sha.test.out --redirect-input /dev/null --chdir /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/MiBench/security-sha --summary /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/MiBench/security-sha/Output/security-sha.test.time /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/MiBench/security-sha/security-sha input_large.asc\n/root/.cache/cs340-asan/build/stage2/ref-native/tools/fpcmp-target /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/MiBench/security-sha/Output/security-sha.test.out /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/MiBench/security-sha/security-sha.reference_output"
+    }
+  ]
+}

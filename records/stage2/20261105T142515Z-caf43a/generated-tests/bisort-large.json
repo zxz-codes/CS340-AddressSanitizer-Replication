@@ -1,0 +1,4 @@
+{
+  "relative_path": "MultiSource/Benchmarks/Olden/bisort/bisort.test",
+  "contents": "RUN: cd %S ; %S/bisort 3000000\nVERIFY: %b/fpcmp-target %o %S/bisort.reference_output\n"
+}

@@ -1,0 +1,4 @@
+{
+  "relative_path": "MultiSource/Benchmarks/mafft/pairlocalalign.test",
+  "contents": "RUN: cd %S ; %S/pairlocalalign -b 62 -g 0.100 -f 2.00 -h 0.100 -L < pyruvate_decarboxylase.fasta\nVERIFY: %b/HashProgramOutput.sh %o\nVERIFY: %b/fpcmp-target %o %S/pairlocalalign.reference_output\n"
+}

@@ -1,0 +1,2702 @@
+[
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 1
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 1
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 1
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 2
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 2
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 2
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 3
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 3
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 3
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 4
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 4
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 4
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 5
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 5
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 5
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 6
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 6
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 6
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 7
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 7
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 7
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 8
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 8
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 8
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 9
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 9
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 9
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 10
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 10
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 10
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 11
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 11
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 11
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 12
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 12
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 12
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 13
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 13
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 13
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 14
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 14
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 14
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "tsp-large",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "tsp-ref",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "bisort-large",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "pairlocalalign-ref",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "security-sha-ref",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "mst-large",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "bisort-ref",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "treeadd-ref",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "perimeter-ref",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "perimeter-large",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-paper-like",
+    "run": 15
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "mst-ref",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "native",
+    "run": 15
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-modern",
+    "run": 15
+  },
+  {
+    "workload": "bullet-ref",
+    "configuration": "asan-paper-like",
+    "run": 15
+  }
+]

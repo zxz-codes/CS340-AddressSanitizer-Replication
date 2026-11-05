@@ -1,0 +1,4 @@
+{
+  "relative_path": "MultiSource/Benchmarks/Olden/mst/mst.test",
+  "contents": "RUN: cd %S ; %S/mst 4000\nVERIFY: %b/fpcmp-target %o %S/mst.reference_output\n"
+}

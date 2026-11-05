@@ -1,0 +1,100 @@
+{
+  "stage": 2,
+  "started_utc": "2026-11-05T14:25:15.975386+00:00",
+  "frozen_utc": "2026-11-05T14:28:34.004901+00:00",
+  "lock": {
+    "paper": "AddressSanitizer: A Fast Address Sanity Checker (USENIX ATC 2012)",
+    "distribution": "Ubuntu-22.04",
+    "benchmark_url": "https://github.com/llvm/llvm-test-suite.git",
+    "benchmark_branch_provenance": "release/14.x",
+    "benchmark_commit": "d52a93a891cde7a76aca63f7a201c5a5fe459f41",
+    "compiler": "clang-14",
+    "symbolizer": "llvm-symbolizer-14",
+    "lit_version": "14.0.6",
+    "runs": 5,
+    "benchmark_subdirectory": "MultiSource/Benchmarks/Olden",
+    "planned_benchmarks": [
+      "bisort",
+      "mst",
+      "perimeter",
+      "treeadd",
+      "tsp"
+    ],
+    "common_cflags": "-O2 -g -fno-omit-frame-pointer -fno-pie",
+    "common_ldflags": "-no-pie",
+    "asan_cflags": "-fsanitize=address -fsanitize-address-use-after-return=never -fno-sanitize-address-use-after-scope",
+    "asan_default_options": "detect_leaks=0:detect_stack_use_after_return=0:halt_on_error=1:symbolize=1",
+    "asan_paper_like_options": "detect_leaks=0:detect_stack_use_after_return=0:halt_on_error=1:symbolize=1:redzone=32:max_redzone=32:quarantine_size_mb=0:thread_local_quarantine_size_kb=0:malloc_context_size=0",
+    "extension_factor": "minimum heap redzone size: 16, 32, 128; max_redzone=2048, quarantine=0, malloc_context_size=0 held fixed",
+    "notes": "Modern implementation on substitute open-source workloads. Not an exact SPEC CPU2006 or LLVM 3.1 replication. No upstream benchmark source edits."
+  },
+  "runs": 15,
+  "warmups": 2,
+  "seed": 340,
+  "timeout_seconds": 600,
+  "new_subdirectories": [
+    "MultiSource/Benchmarks/Bullet",
+    "MultiSource/Benchmarks/mafft",
+    "MultiSource/Benchmarks/MiBench/security-sha"
+  ],
+  "reference_names": [
+    "bisort",
+    "mst",
+    "perimeter",
+    "treeadd",
+    "tsp",
+    "bullet",
+    "pairlocalalign",
+    "security-sha"
+  ],
+  "large_names": [
+    "bisort",
+    "mst",
+    "perimeter",
+    "tsp"
+  ],
+  "large_arguments": {
+    "bisort": [
+      "3000000"
+    ],
+    "mst": [
+      "4000"
+    ],
+    "perimeter": [
+      "11"
+    ],
+    "tsp": [
+      "2048000"
+    ]
+  },
+  "configurations": [
+    "native",
+    "asan-modern",
+    "asan-paper-like"
+  ],
+  "workloads": [
+    "bisort-ref",
+    "mst-ref",
+    "perimeter-ref",
+    "treeadd-ref",
+    "tsp-ref",
+    "bullet-ref",
+    "pairlocalalign-ref",
+    "security-sha-ref",
+    "bisort-large",
+    "mst-large",
+    "perimeter-large",
+    "tsp-large"
+  ],
+  "chosen_cpu": 0,
+  "timer": "perf_counter includes taskset, GNU time, shell, process launch and exit",
+  "output_capture": "Full stdout/stderr captured on Linux ext4; gzip lossless compression and copy to records occur after the timed interval. stdout_sha256 hashes decompressed bytes.",
+  "rss": "GNU time peak resident set in KiB; not VmPeak",
+  "reference_checks": {
+    "upstream": 24,
+    "gcc_differential": 12
+  },
+  "deviation": "Pinned upstream large inputs reuse ref-size expected outputs. Large inputs therefore use full-output cross-compiler GCC differential references generated only in build trees; these are not independent algorithmic proofs.",
+  "formal_trials": 540,
+  "pilot_policy": "One fixed-work native and each ASan run before protocol freeze; excluded from statistics"
+}

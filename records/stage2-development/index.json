@@ -1,0 +1,42 @@
+[
+  {
+    "original_record": "records/stage2/20261105T131239Z-d5fc8d",
+    "archive": "20261105T131239Z-d5fc8d.tgz",
+    "bytes": 66999,
+    "sha256": "9dd6d6b67b1d82a161b78c3f50db769901656ebed333f2fcd3036010c3195a32",
+    "reason": "Precheck failed: lit timeout optional psutil unavailable; no formal trials.",
+    "included_in_formal_results": false,
+    "all_archived_bytes_verified": true,
+    "format": "gzip tar, duplicate content represented by internal hardlinks"
+  },
+  {
+    "original_record": "records/stage2/20261105T131519Z-7aa0dd",
+    "archive": "20261105T131519Z-7aa0dd.tgz",
+    "bytes": 69444,
+    "sha256": "ec2403b47c8824ec145d218976ee227b42dacc3600636f297e7eed38a18a5e6a",
+    "reason": "Precheck failed: large inputs have stale upstream reference-size expected output; no formal trials.",
+    "included_in_formal_results": false,
+    "all_archived_bytes_verified": true,
+    "format": "gzip tar, duplicate content represented by internal hardlinks"
+  },
+  {
+    "original_record": "records/stage2/20261105T132010Z-a0f92e",
+    "archive": "20261105T132010Z-a0f92e.tgz",
+    "bytes": 7843206,
+    "sha256": "dc68166611c9f6cc11ab8350929cd03fefa32e11d9b7f4de34938b01fe6f939c",
+    "reason": "Precheck-only passed; mafft Windows output I/O exposed a timing limitation; no formal trials.",
+    "included_in_formal_results": false,
+    "all_archived_bytes_verified": true,
+    "format": "gzip tar, duplicate content represented by internal hardlinks"
+  },
+  {
+    "original_record": "records/stage2/20261105T132554Z-94d04c",
+    "archive": "20261105T132554Z-94d04c.tgz",
+    "bytes": 6190158,
+    "sha256": "8d90c30ac8997f7c44f4c0d9b8859e80b7abcf6fbfa981bbd282f1b7288c6c3f",
+    "reason": "All 540 trials saved but entire batch excluded after two Windows idle-standby intervals. Final audit also exposed a CSV handle name shadowing bug; fixed before the new batch. No numbers from this batch are used in reports.",
+    "included_in_formal_results": false,
+    "all_archived_bytes_verified": true,
+    "format": "gzip tar, duplicate content represented by internal hardlinks"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "idle_sleep_prevention": "Process-scoped ES_SYSTEM_REQUIRED + ES_DISPLAY_REQUIRED; no power policy change",
+  "battery": [
+    {
+      "BatteryStatus": 2,
+      "EstimatedChargeRemaining": 100
+    }
+  ],
+  "captured_at": "2026-11-05T22:25:11.0430373+08:00"
+}

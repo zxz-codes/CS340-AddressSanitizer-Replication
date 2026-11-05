@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "stage": "failed",
+  "error": "RuntimeError('environment/host-sleep-query: returncode=1, timeout=False; inspect raw streams')",
+  "formal_trials_saved": 540,
+  "ended_utc": "2026-11-05T14:52:27.363871+00:00"
+}

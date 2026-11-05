@@ -1,0 +1,8 @@
+{
+  "query_ended_utc": "2026-11-05T14:56:46.4437973Z",
+  "applicable": true,
+  "events": [],
+  "passed": true,
+  "query_context": "Windows host PowerShell 7; post-run verification infrastructure repair only",
+  "started_utc": "2026-11-05T22:25:15.975386+08:00"
+}

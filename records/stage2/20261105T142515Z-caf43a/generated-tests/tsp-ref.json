@@ -1,0 +1,4 @@
+{
+  "relative_path": "MultiSource/Benchmarks/Olden/tsp/tsp.test",
+  "contents": "RUN: cd %S ; %S/tsp 1024000\nVERIFY: %b/fpcmp-target %o %S/tsp.reference_output\n"
+}

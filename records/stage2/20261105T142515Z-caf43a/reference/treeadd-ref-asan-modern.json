@@ -1,0 +1,62 @@
+{
+  "__version__": [
+    14,
+    0,
+    6
+  ],
+  "elapsed": 3.1171884536743164,
+  "tests": [
+    {
+      "code": "PASS",
+      "elapsed": 3.1089513301849365,
+      "metrics": {
+        "compile_time": 0.0381,
+        "exec_time": 2.2563,
+        "hash": "1b28e17be88e0889ac7e25ffe7c4ac44",
+        "link_time": 0.0354,
+        "size": 1402576,
+        "size..bss": 9779520,
+        "size..comment": 84,
+        "size..data": 11168,
+        "size..data.rel.ro": 1640,
+        "size..debug_abbrev": 592,
+        "size..debug_addr": 144,
+        "size..debug_info": 757,
+        "size..debug_line": 625,
+        "size..debug_line_str": 387,
+        "size..debug_loclists": 486,
+        "size..debug_rnglists": 53,
+        "size..debug_str": 505,
+        "size..debug_str_offsets": 232,
+        "size..dynamic": 528,
+        "size..dynstr": 46103,
+        "size..dynsym": 46968,
+        "size..eh_frame": 104224,
+        "size..eh_frame_hdr": 21524,
+        "size..fini": 13,
+        "size..fini_array": 24,
+        "size..gnu.hash": 13820,
+        "size..gnu.version": 3914,
+        "size..gnu.version_r": 192,
+        "size..got": 184,
+        "size..got.plt": 264,
+        "size..init": 27,
+        "size..init_array": 40,
+        "size..interp": 28,
+        "size..note.ABI-tag": 32,
+        "size..note.gnu.build-id": 36,
+        "size..note.gnu.property": 32,
+        "size..plt": 496,
+        "size..plt.got": 88,
+        "size..preinit_array": 8,
+        "size..rela.dyn": 408,
+        "size..rela.plt": 720,
+        "size..rodata": 75343,
+        "size..tbss": 84,
+        "size..text": 778130
+      },
+      "name": "test-suite :: MultiSource/Benchmarks/Olden/treeadd/treeadd.test",
+      "output": "\n/root/.cache/cs340-asan/build/stage2/ref-asan/tools/timeit-target --limit-core 0 --limit-cpu 7200 --timeout 7200 --limit-file-size 104857600 --limit-rss-size 838860800 --append-exitstatus --redirect-output /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd/Output/treeadd.test.out --redirect-input /dev/null --chdir /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd --summary /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd/Output/treeadd.test.time /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd/treeadd 22\n/root/.cache/cs340-asan/build/stage2/ref-asan/tools/fpcmp-target /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd/Output/treeadd.test.out /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/treeadd/treeadd.reference_output"
+    }
+  ]
+}

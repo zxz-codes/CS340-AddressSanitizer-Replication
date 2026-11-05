@@ -1,0 +1,4 @@
+{
+  "relative_path": "MultiSource/Benchmarks/Olden/treeadd/treeadd.test",
+  "contents": "RUN: cd %S ; %S/treeadd 22\nVERIFY: %b/fpcmp-target %o %S/treeadd.reference_output\n"
+}
