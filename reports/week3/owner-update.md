@@ -1,5 +1,21 @@
 # Week 3: ASan Stage 2 replication progress
 
+## Integration update: November 6, 2026
+
+Owner: Zhou Xiaozhou, student ID 1240025753. The November 5 preparation record below is retained as historical context; its unmerged status is superseded by this update.
+
+After PR #2 was accepted and merged as `ba5fd4a26ff172f052fd129b27f4548b1f96bcc9`, the Stage 2 candidate from `98cf5f0249dd0537e02b4527c25c1e963c099eeb` was merged onto that updated main in an isolated checkout. Stage 1 passed 372 manifest hashes and all recorded checks. Stage 2 passed 2,263 hashes, 45 correctness trials, 36 pilots, 72 warm-ups, 540 formal trials, 24 upstream and 12 GCC differential reference checks, output digests, schedule, CSV/JSON correspondence and statistics. Seven synthetic integrity tests and seven tests on a copy of the real batch passed. The initial synthetic test setup encountered sandbox TEMP permissions; rerunning with workspace-local temporary storage resolved the setup failure without modifying test code or source evidence.
+
+PR #5 was merged with a merge commit, `5abfd816ff1331cb3fd5564328198bdd17d5b152`, preserving its original commit. Its actual tree matched the tested candidate tree `e5ab7c8d3299ee05a61189e1051f363cdde05c1f`. Both stage verifiers were then run on the actual merge, with a clean working tree after verification and restoration of the Stage 1 verifier's generated summary bytes. See [the verification record](integration-verification.json).
+
+Manual review confirmed `heap-01` reports a heap-buffer-overflow at `memory_cases.c:12:39`, allocated at `memory_cases.c:9:14`, with return code 1. `control-fixed-01` returns 0, prints exactly `completed\n` and has empty stderr. For the bisort pilot output, both the compressed-file manifest digest and the decompressed-output digest match their respective recorded values.
+
+The excluded standby-interrupted batch and the accepted batch are separate experimental runs. Within the accepted batch itself, comparison with its pre-host-review manifest shows that only `status.json` changed among the 2,260 original entries; the other 2,259 hashes match the final stored bytes, including measurements and protocol. Three manifest entries were added for the host review and preserved pre-review manifest/status, producing 2,263 entries. Acceptance metadata completion did not rerun the accepted batch or change its measurements or frozen protocol.
+
+Zhang Hanyuan submitted PR #6 at `6e15e9ee53b9f055baa2917283e1d130cad34713`, adding only `reports/week3/result-check.md` against `codex/stage2-benchmarks`. It remains pending author revisions: correct the reference-check scope, distinguish the complete rerun from acceptance-metadata completion, and synchronize the PR description. Feedback was prepared locally for the owner to relay; no PR review or message was posted. PR #6 has not been merged or retargeted. After the author's revision, retarget it to main, recheck that only the personal note is added, and verify before merging.
+
+No experiments were rerun during integration, no original experiment records were changed, and no final v1.0 release was published. AI assisted owner-side review, verification, documentation and integration. Pending revisions are not counted as accepted contribution.
+
 Date: November 5, 2026. Owner: Zhou Xiaozhou, student ID 1240025753.
 
 This week expands the main experiment with different application types, larger upstream inputs and more repetitions. PR #2 and other members' reports remain unchanged. This is a stage submission, without a final v1.0 release or a merge into main.

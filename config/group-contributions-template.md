@@ -4,8 +4,8 @@ Fill with actual work reviewed by each group member. Do not attribute AI-authore
 
 | Full name | Student ID | GitHub username | Design / code / execution / analysis / presentation contribution | Evidence (commit or reviewed file) |
 |---|---|---|---|---|
-| 周潇洲 | 1240025753 | zxz-codes | Deferred | Pending |
-| 张瀚元 | 1240025908 | Galax1an121 | Reproduction audit: diagnosed and fixed the recorded-data checksum failure on a clean clone (Git line-ending normalisation had rewritten the recorded CRLF measurements.csv, breaking the SHA-256 manifest check). Restored the recorded CSV bytes, pinned CSVs as binary in .gitattributes, and independently re-verified the recorded stage-1 result on a fresh clone. | commit 0a5d983; scripts/verify_results.py; records/setup/result-verification.json |
+| 周潇洲 | 1240025753 | zxz-codes | AI-assisted Stage 2 implementation, experiment execution, record verification, analysis and report preparation; owner-side review and integration of the revised Week 2 A note and Stage 2 baseline. The integration checks verified saved records rather than rerunning experiments. | Stage 2 commit 98cf5f0; PR #2 merge ba5fd4a; PR #5 merge 5abfd81; reports/week3/owner-update.md; reports/week3/integration-verification.json |
+| 张瀚元 | 1240025908 | Galax1an121 | Reproduction audit: diagnosed and repaired the recorded CSV checksum failure caused by Git line-ending normalization, restored CRLF bytes, pinned CSVs as binary, and verified the repair. Authored and revised the Week 2 A verification note; accepted in PR #2. Submitted the Stage 2 independent audit note in PR #6, with AI assistance disclosed there; that note remains pending author revisions and is not yet accepted. | Repair commit 0a5d983; Week 2 commits f972929 and 18aad61; reports/week2/result-check.md; PR #2 merge ba5fd4a; pending PR #6 head 6e15e9e |
 | 章殷远 | 1230022374 | Pending | Deferred | Pending |
 | 章越翔 | 1230019110 | Pending | Deferred | Pending |
 

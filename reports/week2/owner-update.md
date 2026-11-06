@@ -1,5 +1,15 @@
 # 第二周 A 方向审核与整合记录
 
+## Integration update: November 6, 2026
+
+Owner: Zhou Xiaozhou, student ID 1240025753. The October 30 entries below are retained as historical review records; the pending PR #2 status in those entries is superseded by this update.
+
+PR #2 was revised at `18aad610e117c828a8e3899e80cab1c818b5b04a`. The report and PR description now distinguish the 25 expected error exits from the 20 clean controls, include quarantine among the profile differences, limit the redzone trend to the observed sample, and distinguish the historical CSV failure from PR #1's subsequent resolution. The obsolete conditional branch note in the PR description was also updated.
+
+The candidate merge onto main `d6c2f3622bb2a3370e209fff31417bc3c3936bcd` added only `reports/week2/result-check.md`. The owner-side Stage 1 audit passed all 372 manifest hashes, stdout digests, statistics, 45 correctness trials, 75 performance trials, 30 extension trials and 10 reference checks. PR #2 was merged with a merge commit, `ba5fd4a26ff172f052fd129b27f4548b1f96bcc9`; both author commits were preserved. Its actual merge tree matched the tested candidate tree `85479d24c8bdf3b290b40c2d4c692c393727ffd3`.
+
+No performance experiment was rerun and no original evidence was changed. AI assisted the owner's review and integration. See [the integration verification record](../week3/integration-verification.json) for this audit and the subsequent Stage 2 acceptance. This owner-side verification is distinct from Zhang Hanyuan's own historical check.
+
 日期：2026-10-30。负责人：周潇洲，1240025753。
 
 ## PR #1：已合并并验收

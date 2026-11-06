@@ -1,0 +1,112 @@
+{
+  "checked_at": "2026-11-06T17:47:32.897122+08:00",
+  "reviewer": {
+    "name": "Zhou Xiaozhou",
+    "student_id": "1240025753",
+    "assistance": "AI-assisted owner-side integration and verification"
+  },
+  "checked_commit": "5abfd816ff1331cb3fd5564328198bdd17d5b152",
+  "checked_tree": "e5ab7c8d3299ee05a61189e1051f363cdde05c1f",
+  "working_tree_clean_after_verification": true,
+  "pr2": {
+    "head": "18aad610e117c828a8e3899e80cab1c818b5b04a",
+    "merge": "ba5fd4a26ff172f052fd129b27f4548b1f96bcc9",
+    "candidate_tree": "85479d24c8bdf3b290b40c2d4c692c393727ffd3",
+    "actual_merge_tree_matches_candidate": true,
+    "only_added_file": "reports/week2/result-check.md",
+    "stage1_verified_hashes": 372
+  },
+  "pr5": {
+    "head": "98cf5f0249dd0537e02b4527c25c1e963c099eeb",
+    "merge": "5abfd816ff1331cb3fd5564328198bdd17d5b152",
+    "candidate_tree": "e5ab7c8d3299ee05a61189e1051f363cdde05c1f",
+    "actual_merge_tree_matches_candidate": true
+  },
+  "stage1": {
+    "passed": true,
+    "record": "records/stage1/20261025T072502Z-06ebb2",
+    "verified_file_hashes": 372,
+    "correctness_trials": 45,
+    "performance_trials": 75,
+    "extension_trials": 30,
+    "reference_checks": 10,
+    "statistics_recomputed": true,
+    "stdout_hashes_recomputed": true
+  },
+  "stage2": {
+    "passed": true,
+    "record": "C:\\Users\\31236\\Desktop\\OS论文复现\\tmp\\acceptance-local-20261106\\records\\stage2\\20261105T142515Z-caf43a",
+    "verified_file_hashes": 2263,
+    "correctness_trials": 45,
+    "reference_checks": 36,
+    "upstream_reference_checks": 24,
+    "gcc_differential_checks": 12,
+    "pilot_trials": 36,
+    "warmup_trials": 72,
+    "performance_trials": 540,
+    "statistics_recomputed": true,
+    "csv_matches_json": true,
+    "schedule_verified": true,
+    "stdout_hashes_recomputed": true
+  },
+  "manual_evidence": {
+    "heap_error": "heap-buffer-overflow",
+    "access": "READ of size 4",
+    "source": "memory_cases.c:12:39",
+    "allocation": "memory_cases.c:9:14",
+    "heap_returncode": 1,
+    "control_stdout": "completed\n",
+    "control_stderr_bytes": 0,
+    "control_returncode": 0,
+    "compressed_bytes": 3059,
+    "decompressed_bytes": 54856,
+    "compressed_sha256": "23c83e73dadd1b11b1c5333b382ad370b56e6439a10ece443a0ab97e381d4b64",
+    "decompressed_sha256": "cce90098d9fd0d1553714a4b78b81db204e36f175c89ab12fe04e6c9bd49f8b3"
+  },
+  "metadata_completion": {
+    "before_entries": 2260,
+    "after_entries": 2263,
+    "changed_existing": [
+      "status.json"
+    ],
+    "added": [
+      "environment/host-sleep-review.json",
+      "environment/pre-host-review-manifest.json",
+      "environment/pre-host-review-status.json"
+    ],
+    "other_original_files_rehashed_and_unchanged": 2259
+  },
+  "integrity_tests": {
+    "checked_tree": "e5ab7c8d3299ee05a61189e1051f363cdde05c1f",
+    "synthetic": {
+      "command": "python -X utf8 scripts/test_stage2_integrity.py --synthetic",
+      "tests": 7,
+      "passed": true,
+      "exit_code": 0
+    },
+    "real_copy": {
+      "command": "python -X utf8 scripts/test_stage2_integrity.py records/stage2/20261105T142515Z-caf43a",
+      "tests": 7,
+      "passed": true,
+      "exit_code": 0
+    },
+    "temporary_directory": "Isolated workspace scratch directory; source batch was never mutated. Initial synthetic setup was blocked by sandbox TEMP permissions; both suites passed after using writable workspace TEMP."
+  },
+  "verification_commands": [
+    "python -X utf8 scripts/verify_results.py",
+    "python -X utf8 scripts/verify_stage2.py",
+    "python -X utf8 ../check-integration-evidence.py ."
+  ],
+  "stage1_summary_handling": "The Stage 1 verifier rewrites a generated summary. Original checkout bytes were restored after verification; git status remained clean.",
+  "pr6": {
+    "head": "6e15e9ee53b9f055baa2917283e1d130cad34713",
+    "status": "Pending author revisions; not merged or retargeted",
+    "feedback_delivery": "Local feedback prepared for owner to relay; no message or PR review posted"
+  },
+  "experiments_rerun": false,
+  "final_release_published": false,
+  "stdout": {
+    "stage1": "{\r\n  \"stage1\": {\r\n    \"passed\": true,\r\n    \"record\": \"records/stage1/20261025T072502Z-06ebb2\",\r\n    \"verified_file_hashes\": 372,\r\n    \"correctness_trials\": 45,\r\n    \"performance_trials\": 75,\r\n    \"extension_trials\": 30,\r\n    \"reference_checks\": 10,\r\n    \"statistics_recomputed\": true,\r\n    \"stdout_hashes_recomputed\": true\r\n  },\r\n  \"manual_evidence\": {\r\n    \"heap_error\": \"heap-buffer-overflow\",\r\n    \"access\": \"READ of size 4\",\r\n    \"source\": \"memory_cases.c:12:39\",\r\n    \"allocation\": \"memory_cases.c:9:14\",\r\n    \"heap_returncode\": 1,\r\n    \"control_stdout\": \"completed\\n\",\r\n    \"control_stderr_bytes\": 0,\r\n    \"control_returncode\": 0,\r\n    \"compressed_bytes\": 3059,\r\n    \"decompressed_bytes\": 54856,\r\n    \"compressed_sha256\": \"23c83e73dadd1b11b1c5333b382ad370b56e6439a10ece443a0ab97e381d4b64\",\r\n    \"decompressed_sha256\": \"cce90098d9fd0d1553714a4b78b81db204e36f175c89ab12fe04e6c9bd49f8b3\"\r\n  },\r\n  \"metadata_completion\": {\r\n    \"before_entries\": 2260,\r\n    \"after_entries\": 2263,\r\n    \"changed_existing\": [\r\n      \"status.json\"\r\n    ],\r\n    \"added\": [\r\n      \"environment/host-sleep-review.json\",\r\n      \"environment/pre-host-review-manifest.json\",\r\n      \"environment/pre-host-review-status.json\"\r\n    ],\r\n    \"other_original_files_rehashed_and_unchanged\": 2259\r\n  }\r\n}\r\n",
+    "stage2": "{\r\n  \"passed\": true,\r\n  \"record\": \"C:\\\\Users\\\\31236\\\\Desktop\\\\OS\\u8bba\\u6587\\u590d\\u73b0\\\\tmp\\\\acceptance-local-20261106\\\\records\\\\stage2\\\\20261105T142515Z-caf43a\",\r\n  \"verified_file_hashes\": 2263,\r\n  \"correctness_trials\": 45,\r\n  \"reference_checks\": 36,\r\n  \"upstream_reference_checks\": 24,\r\n  \"gcc_differential_checks\": 12,\r\n  \"pilot_trials\": 36,\r\n  \"warmup_trials\": 72,\r\n  \"performance_trials\": 540,\r\n  \"statistics_recomputed\": true,\r\n  \"csv_matches_json\": true,\r\n  \"schedule_verified\": true,\r\n  \"stdout_hashes_recomputed\": true\r\n}\r\n"
+  }
+}
