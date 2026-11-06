@@ -1,0 +1,4 @@
+{
+  "relative_path": "MultiSource/Benchmarks/Bullet/bullet.test",
+  "contents": "RUN: cd %S ; %S/bullet \nVERIFY: %b/fpcmp-target %o %S/bullet.reference_output\n"
+}

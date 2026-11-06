@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "record": "C:\\Users\\31236\\Desktop\\OS\u8bba\u6587\u590d\u73b0\\tmp\\stage2-work\\records\\stage2\\20261105T142515Z-caf43a",
+  "verified_file_hashes": 2263,
+  "correctness_trials": 45,
+  "reference_checks": 36,
+  "upstream_reference_checks": 24,
+  "gcc_differential_checks": 12,
+  "pilot_trials": 36,
+  "warmup_trials": 72,
+  "performance_trials": 540,
+  "statistics_recomputed": true,
+  "csv_matches_json": true,
+  "schedule_verified": true,
+  "stdout_hashes_recomputed": true
+}

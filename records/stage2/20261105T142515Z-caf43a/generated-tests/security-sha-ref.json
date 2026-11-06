@@ -1,0 +1,4 @@
+{
+  "relative_path": "MultiSource/Benchmarks/MiBench/security-sha/security-sha.test",
+  "contents": "RUN: cd %S ; %S/security-sha input_large.asc\nVERIFY: %b/fpcmp-target %o %S/security-sha.reference_output\n"
+}

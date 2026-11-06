@@ -7,3 +7,6 @@
 # not rewrite line endings on commit or checkout. Otherwise verify_results.py
 # fails the manifest check on a clean clone.
 *.csv binary
+
+# Stage 2 manifests cover raw streams and snapshots byte-for-byte.
+records/stage2/** -text

@@ -1,0 +1,58 @@
+{
+  "__version__": [
+    14,
+    0,
+    6
+  ],
+  "elapsed": 9.322161436080933,
+  "tests": [
+    {
+      "code": "PASS",
+      "elapsed": 9.31471562385559,
+      "metrics": {
+        "compile_time": 7.771000000000001,
+        "exec_time": 9.0562,
+        "hash": "1758c6c55935ccd28dc3ff5334e06ac5",
+        "link_time": 0.0242,
+        "size": 1322680,
+        "size..bss": 132716800,
+        "size..comment": 84,
+        "size..data": 8101,
+        "size..debug_abbrev": 14641,
+        "size..debug_addr": 27304,
+        "size..debug_info": 135882,
+        "size..debug_line": 211802,
+        "size..debug_line_str": 2877,
+        "size..debug_loclists": 350393,
+        "size..debug_rnglists": 4491,
+        "size..debug_str": 13997,
+        "size..debug_str_offsets": 16280,
+        "size..dynamic": 480,
+        "size..dynstr": 461,
+        "size..dynsym": 1176,
+        "size..eh_frame": 13800,
+        "size..eh_frame_hdr": 2596,
+        "size..fini": 13,
+        "size..fini_array": 8,
+        "size..gnu.hash": 48,
+        "size..gnu.version": 98,
+        "size..gnu.version_r": 144,
+        "size..got": 16,
+        "size..got.plt": 368,
+        "size..init": 27,
+        "size..init_array": 8,
+        "size..interp": 28,
+        "size..note.ABI-tag": 32,
+        "size..note.gnu.build-id": 36,
+        "size..note.gnu.property": 32,
+        "size..plt": 704,
+        "size..rela.dyn": 120,
+        "size..rela.plt": 1032,
+        "size..rodata": 27726,
+        "size..text": 432614
+      },
+      "name": "test-suite :: MultiSource/Benchmarks/mafft/pairlocalalign.test",
+      "output": "\n/root/.cache/cs340-asan/build/stage2/ref-native/tools/timeit-target --limit-core 0 --limit-cpu 7200 --timeout 7200 --limit-file-size 104857600 --limit-rss-size 838860800 --append-exitstatus --redirect-output /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft/Output/pairlocalalign.test.out --redirect-input /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft/pyruvate_decarboxylase.fasta --chdir /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft --summary /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft/Output/pairlocalalign.test.time /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft/pairlocalalign -b 62 -g 0.100 -f 2.00 -h 0.100 -L\n/root/.cache/cs340-asan/build/stage2/ref-native/tools/HashProgramOutput.sh /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft/Output/pairlocalalign.test.out\n/root/.cache/cs340-asan/build/stage2/ref-native/tools/fpcmp-target /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft/Output/pairlocalalign.test.out /root/.cache/cs340-asan/build/stage2/ref-native/MultiSource/Benchmarks/mafft/pairlocalalign.reference_output"
+    }
+  ]
+}

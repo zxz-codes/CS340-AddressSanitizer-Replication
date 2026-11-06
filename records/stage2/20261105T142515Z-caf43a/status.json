@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "stage": "complete",
+  "formal_trials": 540,
+  "correctness_trials": 45,
+  "ended_utc": "2026-11-05T14:52:27.363871+00:00",
+  "finalized_utc": "2026-11-05T14:56:48.092160+00:00",
+  "finalization": "Host review only; all original sample files and protocol retained byte-for-byte"
+}

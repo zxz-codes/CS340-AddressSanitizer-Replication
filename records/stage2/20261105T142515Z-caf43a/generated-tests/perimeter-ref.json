@@ -1,0 +1,4 @@
+{
+  "relative_path": "MultiSource/Benchmarks/Olden/perimeter/perimeter.test",
+  "contents": "RUN: cd %S ; %S/perimeter 10\nVERIFY: %b/fpcmp-target %o %S/perimeter.reference_output\n"
+}

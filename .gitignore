@@ -10,6 +10,7 @@ build/
 *.tar
 *.tar.gz
 __pycache__/
+config/stage2-host-power.json
 
 # C and CMake build products
 *.o
@@ -30,3 +31,6 @@ Testing/
 .cache/
 
 # Raw experiment .log and .time files under records/ are intentional evidence.
+!records/stage2/**/build/
+!records/stage2/**/build/*.gz
+!records/stage2/**/build/*-CMakeCache.txt

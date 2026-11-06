@@ -1,0 +1,63 @@
+{
+  "__version__": [
+    14,
+    0,
+    6
+  ],
+  "elapsed": 4.105395555496216,
+  "tests": [
+    {
+      "code": "PASS",
+      "elapsed": 4.095847129821777,
+      "metrics": {
+        "compile_time": 34.616400000000006,
+        "exec_time": 3.9773,
+        "hash": "ada9b8313eb682c9dd65015e2d749cf0",
+        "link_time": 0.13,
+        "size": 11233776,
+        "size..bss": 10360224,
+        "size..comment": 84,
+        "size..data": 986144,
+        "size..data.rel.ro": 1928,
+        "size..debug_abbrev": 170894,
+        "size..debug_addr": 87720,
+        "size..debug_info": 1492265,
+        "size..debug_line": 984549,
+        "size..debug_line_str": 29410,
+        "size..debug_loclists": 1660996,
+        "size..debug_rnglists": 407037,
+        "size..debug_str": 388573,
+        "size..debug_str_offsets": 219028,
+        "size..dynamic": 544,
+        "size..dynstr": 47217,
+        "size..dynsym": 48216,
+        "size..eh_frame": 193768,
+        "size..eh_frame_hdr": 38900,
+        "size..fini": 13,
+        "size..fini_array": 816,
+        "size..gcc_except_table": 14780,
+        "size..gnu.hash": 13948,
+        "size..gnu.version": 4018,
+        "size..gnu.version_r": 256,
+        "size..got": 216,
+        "size..got.plt": 416,
+        "size..init": 27,
+        "size..init_array": 1032,
+        "size..interp": 28,
+        "size..note.ABI-tag": 32,
+        "size..note.gnu.build-id": 36,
+        "size..note.gnu.property": 32,
+        "size..plt": 800,
+        "size..plt.got": 88,
+        "size..preinit_array": 8,
+        "size..rela.dyn": 576,
+        "size..rela.plt": 1176,
+        "size..rodata": 196888,
+        "size..tbss": 84,
+        "size..text": 3696482
+      },
+      "name": "test-suite :: MultiSource/Benchmarks/Bullet/bullet.test",
+      "output": "\n/root/.cache/cs340-asan/build/stage2/ref-asan/tools/timeit-target --limit-core 0 --limit-cpu 7200 --timeout 7200 --limit-file-size 104857600 --limit-rss-size 838860800 --append-exitstatus --redirect-output /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet/Output/bullet.test.out --redirect-input /dev/null --chdir /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet --summary /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet/Output/bullet.test.time /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet/bullet\n/root/.cache/cs340-asan/build/stage2/ref-asan/tools/fpcmp-target /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet/Output/bullet.test.out /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Bullet/bullet.reference_output"
+    }
+  ]
+}

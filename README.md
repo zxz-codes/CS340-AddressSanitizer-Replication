@@ -1,4 +1,4 @@
-# CS340: AddressSanitizer replication, stage 1
+# CS340: AddressSanitizer replication
 
 Paper 8: **AddressSanitizer: A Fast Address Sanity Checker**, USENIX ATC 2012.
 
@@ -6,10 +6,10 @@ Group repository: https://github.com/zxz-codes/CS340-AddressSanitizer-Replicatio
 
 | Member | Student ID |
 |---|---|
-| 周潇洲 | 1240025753 |
-| 张瀚元 | 1240025908 |
-| 章殷远 | 1230022374 |
-| 章越翔 | 1230019110 |
+| Zhou Xiaozhou | 1240025753 |
+| Zhang Hanyuan | 1240025908 |
+| Zhang Yinyuan | 1230022374 |
+| Zhang Yuexiang | 1230019110 |
 
 Individual roles will be recorded later, as requested by the group.
 
@@ -60,12 +60,41 @@ Time is end-to-end monotonic elapsed time, including launch/exit. Each ASan/nati
 
 Five related Olden programs are a limited first-stage subset. The original 1.73x runtime result, writes-only mode and Chromium deployment are not established here. WSL virtual CPU mapping to laptop P/E cores, background applications, thermal state and power policy remain limitations. A clean finite control suite is not a proof of zero false positives.
 
-## Reports
+## Stage 2: expanded workloads and larger inputs
+
+Stage 2 has an independent runner and record directory. It retains the five Olden reference inputs, adds Bullet, mafft and MiBench security-sha, and adds four upstream large Olden inputs (bisort 3000000, mst 4000, perimeter 11, tsp 2048000). All three profiles use the Stage 1 compiler flags and ASan options. The matrix is 12 workloads x 3 profiles x 15 rounds = 540 formal trials, with two excluded warm-ups per combination and separate pilot trials.
+
+Use the existing Stage 1 setup, including GCC/G++ from build-essential. Keep the laptop plugged in and avoid other CPU/disk-heavy tasks during measurement. No new system package is required.
+
+The Windows wrapper requests process-scoped system/display wakefulness while the experiment runs, then releases the request in `finally`; it does not change power policy. The runner checks Windows sleep/resume events at completion and rejects an interrupted batch. Earlier development records, including one complete matrix excluded after idle standby, are preserved as byte-verified deduplicated `.tgz` archives under `records/stage2-development/`. None contribute numbers to Stage 2 reports.
+
+```powershell
+.\scripts\Run-Stage2.ps1 -PrecheckOnly
+.\scripts\Run-Stage2.ps1
+```
+
+Native Linux: `python3 scripts/run_stage2.py --precheck-only`, then `python3 scripts/run_stage2.py`. Use the same `CS340_ASAN_WORKDIR` and Linux user as setup. Builds remain on Linux ext4; the runner expands the sparse checkout without editing upstream source files.
+
+The pinned upstream revision supplies LARGE_PROBLEM_SIZE arguments but still has reference-size expected output for those Olden programs. Stage 2 records this deviation explicitly: the eight reference-size workloads pass 24 upstream checks; the four large workloads pass 12 full-output differential checks against a separate GCC build. Generated large expectations live only in build directories. GCC consistency is not an independent proof of algorithm correctness. Failed prechecks remain in `records/stage2/` and do not provide report numbers.
+
+Successful runs update only `records/latest-stage2.txt`. A failed or precheck-only run never updates that pointer. Complete stdout/stderr are captured on Linux ext4 and losslessly gzip-compressed after timing; decompression restores every original byte. No output is truncated or filtered. Commands, generated test definitions, source/input hashes, protocol, schedule and checksums are saved separately for every batch. The timer includes taskset, GNU time, a shell, launch and exit. This differs from the Stage 1 launch wrapper; short workloads and cross-batch comparisons retain that limitation. RSS is not VmPeak. The runner kills timed-out process groups after 600 seconds and does not discard unsuccessful formal trials or replace them with fresh samples.
+
+```bash
+python scripts/verify_stage2.py
+python scripts/test_stage2_integrity.py records/stage2/<successful-id>
+python scripts/make_stage2_reports.py
+```
+
+Verification is read-only and checks all 648 pilot/warm-up/formal rows, the paired matrix, random schedule, raw outputs, CSV/JSON, statistics and file manifests. Mutation tests use a temporary copy and confirm that missing/duplicate trials, wrong commands, corrupted output and wrong statistics are rejected. The Stage 2 report generator reads only a verified successful run and writes an independent English PDF and figures. See [Stage 2 recorded results](reports/stage2/results.md).
+
+Stage 2 report: [English](output/pdf/ASan_Stage2_Replication_Report_EN.pdf). The Chinese explanation is retained locally and is excluded from this English submission. The [Week 3 owner update](reports/week3/owner-update.md) records actual work, deviations and excluded batches. A complete run on the recorded machine takes roughly half an hour; initial builds and file verification may add time. On WSL, use the PowerShell wrapper so idle-sleep prevention and host log review run in the Windows context. Finalizing acceptance metadata never changes measured samples or their frozen protocol.
+
+## Stage 1 reports
 
 The English PDF is structured around course claims, setup, deviations, results, evidence, analysis, extension and limitations. The Chinese PDF explains how the experiment and ASan work. Both are stage reports, pending group contribution details and later experiments.
 
 - [English stage report](output/pdf/ASan_Stage1_Replication_Report_EN.pdf)
-- [中文解释性报告](output/pdf/ASan_第一阶段复现解释报告_中文.pdf)
+- [Stage 1 Chinese explanatory report](output/pdf/ASan_第一阶段复现解释报告_中文.pdf)
 - [Recorded result summary](reports/Stage1_Results.md)
 - [Independent result verification](records/setup/result-verification.json)
 

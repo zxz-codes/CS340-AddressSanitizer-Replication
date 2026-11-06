@@ -1,0 +1,10 @@
+{
+  "runs": 15,
+  "warmups": 2,
+  "seed": 340,
+  "timeout_seconds": 600,
+  "new_subdirectories": ["MultiSource/Benchmarks/Bullet", "MultiSource/Benchmarks/mafft", "MultiSource/Benchmarks/MiBench/security-sha"],
+  "reference_names": ["bisort", "mst", "perimeter", "treeadd", "tsp", "bullet", "pairlocalalign", "security-sha"],
+  "large_names": ["bisort", "mst", "perimeter", "tsp"],
+  "large_arguments": {"bisort": ["3000000"], "mst": ["4000"], "perimeter": ["11"], "tsp": ["2048000"]}
+}

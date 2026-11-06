@@ -1,0 +1,62 @@
+{
+  "__version__": [
+    14,
+    0,
+    6
+  ],
+  "elapsed": 0.9498560428619385,
+  "tests": [
+    {
+      "code": "PASS",
+      "elapsed": 0.9415361881256104,
+      "metrics": {
+        "compile_time": 0.1339,
+        "exec_time": 0.7759,
+        "hash": "17f20ee7c230650209fc5cf9e004cede",
+        "link_time": 0.0621,
+        "size": 1427408,
+        "size..bss": 9779584,
+        "size..comment": 84,
+        "size..data": 11552,
+        "size..data.rel.ro": 1640,
+        "size..debug_abbrev": 1194,
+        "size..debug_addr": 304,
+        "size..debug_info": 3411,
+        "size..debug_line": 4641,
+        "size..debug_line_str": 467,
+        "size..debug_loclists": 7625,
+        "size..debug_rnglists": 551,
+        "size..debug_str": 839,
+        "size..debug_str_offsets": 556,
+        "size..dynamic": 528,
+        "size..dynstr": 46127,
+        "size..dynsym": 47016,
+        "size..eh_frame": 104432,
+        "size..eh_frame_hdr": 21564,
+        "size..fini": 13,
+        "size..fini_array": 24,
+        "size..gnu.hash": 13820,
+        "size..gnu.version": 3918,
+        "size..gnu.version_r": 208,
+        "size..got": 184,
+        "size..got.plt": 280,
+        "size..init": 27,
+        "size..init_array": 48,
+        "size..interp": 28,
+        "size..note.ABI-tag": 32,
+        "size..note.gnu.build-id": 36,
+        "size..note.gnu.property": 32,
+        "size..plt": 528,
+        "size..plt.got": 88,
+        "size..preinit_array": 8,
+        "size..rela.dyn": 408,
+        "size..rela.plt": 768,
+        "size..rodata": 75544,
+        "size..tbss": 84,
+        "size..text": 786898
+      },
+      "name": "test-suite :: MultiSource/Benchmarks/Olden/tsp/tsp.test",
+      "output": "\n/root/.cache/cs340-asan/build/stage2/ref-asan/tools/timeit-target --limit-core 0 --limit-cpu 7200 --timeout 7200 --limit-file-size 104857600 --limit-rss-size 838860800 --append-exitstatus --redirect-output /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp/Output/tsp.test.out --redirect-input /dev/null --chdir /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp --summary /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp/Output/tsp.test.time /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp/tsp 1024000\n/root/.cache/cs340-asan/build/stage2/ref-asan/tools/fpcmp-target /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp/Output/tsp.test.out /root/.cache/cs340-asan/build/stage2/ref-asan/MultiSource/Benchmarks/Olden/tsp/tsp.reference_output"
+    }
+  ]
+}

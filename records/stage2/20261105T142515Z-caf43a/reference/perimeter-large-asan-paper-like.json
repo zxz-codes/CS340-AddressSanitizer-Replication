@@ -1,0 +1,62 @@
+{
+  "__version__": [
+    14,
+    0,
+    6
+  ],
+  "elapsed": 0.8028738498687744,
+  "tests": [
+    {
+      "code": "PASS",
+      "elapsed": 0.789395809173584,
+      "metrics": {
+        "compile_time": 0.08460000000000001,
+        "exec_time": 0.565,
+        "hash": "5ad18288ac7fd933556a31b7e696d729",
+        "link_time": 0.0473,
+        "size": 1407184,
+        "size..bss": 9779520,
+        "size..comment": 84,
+        "size..data": 11104,
+        "size..data.rel.ro": 1640,
+        "size..debug_abbrev": 806,
+        "size..debug_addr": 336,
+        "size..debug_info": 1961,
+        "size..debug_line": 1678,
+        "size..debug_line_str": 401,
+        "size..debug_loclists": 1760,
+        "size..debug_rnglists": 168,
+        "size..debug_str": 810,
+        "size..debug_str_offsets": 452,
+        "size..dynamic": 528,
+        "size..dynstr": 46103,
+        "size..dynsym": 46968,
+        "size..eh_frame": 104368,
+        "size..eh_frame_hdr": 21548,
+        "size..fini": 13,
+        "size..fini_array": 24,
+        "size..gnu.hash": 13820,
+        "size..gnu.version": 3914,
+        "size..gnu.version_r": 192,
+        "size..got": 184,
+        "size..got.plt": 264,
+        "size..init": 27,
+        "size..init_array": 40,
+        "size..interp": 28,
+        "size..note.ABI-tag": 32,
+        "size..note.gnu.build-id": 36,
+        "size..note.gnu.property": 32,
+        "size..plt": 496,
+        "size..plt.got": 88,
+        "size..preinit_array": 8,
+        "size..rela.dyn": 408,
+        "size..rela.plt": 720,
+        "size..rodata": 75385,
+        "size..tbss": 84,
+        "size..text": 780674
+      },
+      "name": "test-suite :: MultiSource/Benchmarks/Olden/perimeter/perimeter.test",
+      "output": "\n/root/.cache/cs340-asan/build/stage2/large-asan/tools/timeit-target --limit-core 0 --limit-cpu 7200 --timeout 7200 --limit-file-size 104857600 --limit-rss-size 838860800 --append-exitstatus --redirect-output /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter/Output/perimeter.test.out --redirect-input /dev/null --chdir /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter --summary /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter/Output/perimeter.test.time /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter/perimeter 11\n/root/.cache/cs340-asan/build/stage2/large-asan/tools/fpcmp-target /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter/Output/perimeter.test.out /root/.cache/cs340-asan/build/stage2/large-asan/MultiSource/Benchmarks/Olden/perimeter/perimeter.stage2-reference_output"
+    }
+  ]
+}
