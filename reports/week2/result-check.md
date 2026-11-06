@@ -51,14 +51,18 @@ Actual output:
 }
 ```
 
-Exit status `0`.
+Exit status `0`. This is the exit status of the verification script itself. It does not
+mean every measured process returned 0: the 25 injected-error cases are expected to make the
+program under test abort with status 1, and the script checks that this happened.
 
 What this output establishes, in the order the script checks it:
 
 * `status.json` records `passed: true` for the audited batch, and the batch is the one
   the `latest-stage1.txt` pointer selects, so the audit ran against the intended record.
-* All 45 correctness trials, 75 performance trials and 30 extension trials have
-  `returncode == 0`; the CSV has exactly as many rows as the JSON record.
+* All 45 correctness trials passed their expected checks: 25 injected-error trials
+  returned 1 and 20 clean-control trials returned 0. All 75 performance trials and 30
+  extension trials returned 0. The measurement CSV and JSON contain the same number of
+  records.
 * Every benchmark's stdout hash is identical across its repetitions, and each stored
   `stdout_sha256` was recomputed from the corresponding log file.
 * Every mean and standard deviation in `summary.json` was recomputed from
@@ -129,23 +133,36 @@ repetition:
 | `asan-modern` | 0.613 ± 0.122 | 134770 ± 7 | 2.447 ± 0.496 |
 
 This record supports the *direction* of the paper's cost claim — enabling ASan costs
-measurable time and memory — and it additionally shows that the cost is strongly
-configuration-dependent, which is the paper's own argument in §4.3. The two recorded ASan
-profiles differ only in redzone sizing and malloc-context capture
-(`config/environment-lock.json`: `asan_paper_like_options` pins `redzone=32`,
-`max_redzone=32`, `quarantine_size_mb=0` and `malloc_context_size=0`, matching the
-settings the paper used for its SPEC measurement, whereas `asan_default_options` leaves
-ASan's default dynamic redzone sizing in place). The paper-like profile costs 1.770× the
-native runtime and the modern profile 2.447×. Note that **both** profiles deliberately
-exclude leak detection and use-after-return detection from the measured scope
-(`detect_leaks=0`, `-fsanitize-address-use-after-return=never`), so the difference above
-is attributable to the redzone and malloc-context settings alone.
+measurable time and memory. The paper-like profile costs 1.770× the native runtime and the
+modern profile 2.447× on this recorded workload.
 
-The recorded redzone extension on the same workload reproduces the monotone cost trend
-the paper predicts for larger redzones (§4.3): on `bisort`, minimum heap redzone
-16 → 32 → 128 bytes gives 0.420 → 0.428 → 0.607 s and 32211 → 41434 → 96754 KiB peak
-RSS, with `max_redzone`, quarantine size and malloc context size held fixed — one factor
-changed at a time.
+The two recorded ASan profiles differ in redzone sizing, quarantine settings, and
+allocation-stack capture settings. The paper-like profile pins `redzone=32`,
+`max_redzone=32`, `quarantine_size_mb=0`, `thread_local_quarantine_size_kb=0` and
+`malloc_context_size=0`, whereas the modern profile leaves these to the runtime defaults
+(`records/stage1/20261025T072502Z-06ebb2/protocol.json`). On this recorded bisort workload,
+the paired mean runtime ratios are 1.770× for the paper-like profile and 2.447× for the
+modern profile. These measurements show an observed difference between the two
+configurations, but do not isolate the contribution of any individual setting.
+
+Note that **both** profiles deliberately exclude leak detection and use-after-return
+detection from the measured scope (`detect_leaks=0`,
+`-fsanitize-address-use-after-return=never`), so the difference above is a difference
+between the two whole configurations, not an effect of any one option.
+
+In the recorded bisort extension, the sample means of elapsed time and peak RSS increase as
+the minimum heap redzone changes from 16 to 32 to 128 bytes (0.420 → 0.428 → 0.607 s and
+32211 → 41434 → 96754 KiB), with `max_redzone`, quarantine settings, and
+`malloc_context_size` held fixed. This is a descriptive trend in this sample; it does not
+establish statistically significant timing differences between every pair of settings or a
+universal trend across workloads. In particular, the 0.420 s and 0.428 s means come from
+overlapping observed ranges, so the mean difference between them carries no significance
+claim on its own.
+
+The extension also records `mst`, where the same three settings give 0.054 → 0.050 → 0.057 s
+and 37349 → 37360 → 37335 KiB peak RSS. That is neither an increasing timing trend nor a
+growing memory trend, so the bisort observation cannot be generalised to the other
+recorded workload either.
 
 **Limitation that must be preserved:** `max_rss_kib` is GNU `time`'s resident-memory
 high-water mark, **not** the paper's `VmPeak` metric. It must not be presented as a
@@ -153,9 +170,10 @@ reproduction of the paper's 3.37× memory result. Likewise these substitute work
 not reproduce the paper's SPEC CPU2006 aggregate slowdown; the paper's 73% average comes
 from a different benchmark set on different hardware.
 
-## 5. Problem found: a fresh clone of `main` fails this very audit
+## 5. Historical CSV checksum issue and subsequent resolution
 
-**This is the one issue found, and it needs a group decision.**
+**This issue was found during the check below and has since been resolved by the group
+owner. The original finding is retained here as historical evidence.**
 
 The audit above was run on commit `f7b56aa`, which already contains the stage-1 repair
 commit `0a5d983`. To test whether the *shared* branch is self-consistent, I created a
@@ -196,20 +214,33 @@ re-committed) into the same `origin/main` checkout gives:
   {"passed": true, ..., "verified_file_hashes": 372, ...}
 ```
 
-So the defect is already fixed on the open branch `feature/zhang-hanyuan-stage1-audit`
-(pull request #1), but **that fix is not yet on `main`**. Until pull request #1 is
-merged, anyone who clones `main` — including the teaching team's weekly repository
-check — will see the independent audit fail, even though the underlying experimental
-records are intact and internally consistent.
+### Status update
 
-Suggested follow-up, for the group owner to decide:
+The failure described above was observed on the historical `main` commit `0e9d476`. Pull
+request #1 has since been merged in commit
+`40a3c800b6030bb6b67611164a0f3d808b6de2f8` ("[1240025753 周潇洲] Merge CSV checksum
+repair"), and the group owner subsequently verified a fresh clone of the merged `main`,
+with all 372 manifest hashes matching. The original failure is retained here as historical
+evidence, rather than a statement about the current `main` branch.
 
-1. Merge pull request #1 into `main` before the next weekly check, so that `main` passes
-   `scripts/verify_results.py` on a fresh clone.
-2. Keep the CSV pinned in `.gitattributes`; no other experiment file needs a binary rule
+The owner's verification is recorded in:
+
+* `reports/week2/owner-update.md`
+* `records/week2/pr1-integration-verification.json`
+* `records/week2/pr1-clean-audit.log`
+
+That owner-side verification is the owner's own check, not a re-run performed by the author
+of this note; the date, commit and environment it used are recorded in those files. No
+additional verification was performed by the author while revising this section, and the
+2026-10-30 check documented above remains the author's own.
+
+The two points that were raised for the group owner's decision at the time remain valid as
+engineering guidance:
+
+1. Keep the CSV pinned in `.gitattributes`; no other experiment file needs a binary rule
    (the audit recomputed 371 other digests successfully).
-3. No measurement file needs to be changed — the recorded bytes are already correct on
-   the stage-1 branch.
+2. No measurement file needed to be changed — the recorded bytes were already correct once
+   the normalisation rule was corrected.
 
 ## 6. Conclusion
 
@@ -218,13 +249,18 @@ Suggested follow-up, for the group owner to decide:
   stdout hashes all agree, and the audit passes.
 * The error report supports the paper's detection-and-localisation claim and directly
   exhibits the shadow-memory mechanism the paper describes.
-* The performance record supports the existence and the configuration-dependence of
-  ASan's overhead, and the redzone extension reproduces the paper's predicted monotone
-  cost trend — within the stated limitations of substitute workloads and a non-`VmPeak`
+* The performance record supports the existence of ASan's overhead and shows an observed
+  difference between the two recorded configurations, without isolating any single
+  setting. In the recorded bisort extension, elapsed-time and peak-RSS sample means
+  increase with the minimum heap redzone from 16 to 32 to 128 bytes; this is a descriptive
+  trend in this sample, not a demonstrated universal trend — the recorded `mst` extension
+  does not show it, and the mean differences are not established as statistically
+  significant — within the stated limitations of substitute workloads and a non-`VmPeak`
   memory metric.
-* One defect was found and localised: **`main` currently fails the independent audit on
-  a fresh clone** because of git line-ending normalisation of `measurements.csv`. The fix
-  already exists in open pull request #1 and needs to be merged.
+* One defect was found and localised: on the historical `main` commit `0e9d476`, a fresh
+  clone failed the independent audit because of git line-ending normalisation of
+  `measurements.csv`. Pull request #1 has since been merged (`40a3c80`), and the group
+  owner verified a fresh clone of the merged `main` with all 372 manifest hashes matching.
 
 ## 7. What this check did not do
 
