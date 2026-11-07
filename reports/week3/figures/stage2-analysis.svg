@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="figure-title figure-desc">
+<title id="figure-title">Stage 2 paired ASan timing ratios</title>
+<desc id="figure-desc">Two panels show mean paired ASan/native elapsed-time ratios with sample standard deviation error bars. The left panel compares Bullet with MAFFT pairlocalalign. The right panel compares Perimeter inputs 10 and 11.</desc>
+<rect width="1200" height="640" fill="#f4f7f9"/>
+<text x="44.00" y="43.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#243746">Stage 2 paired ASan timing overhead</text>
+<text x="44.00" y="69.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#526777">Higher values indicate a larger ASan/native elapsed-time ratio. Panels use separate y-axis scales.</text>
+<rect x="30.00" y="92" width="565.00" height="500" rx="12" fill="#ffffff" stroke="#d6dee5" stroke-width="1.5"/>
+<text x="80.00" y="126.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#243746">Application comparison</text>
+<text x="80.00" y="148.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#526777">Bullet vs MAFFT (pairlocalalign ref); n = 15</text>
+<line x1="100.00" y1="535.00" x2="565.00" y2="535.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="88.00" y="540.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">0.0</text>
+<line x1="100.00" y1="459.00" x2="565.00" y2="459.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="88.00" y="464.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">0.5</text>
+<line x1="100.00" y1="383.00" x2="565.00" y2="383.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="88.00" y="388.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">1.0</text>
+<line x1="100.00" y1="307.00" x2="565.00" y2="307.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="88.00" y="312.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">1.5</text>
+<line x1="100.00" y1="231.00" x2="565.00" y2="231.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="88.00" y="236.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">2.0</text>
+<line x1="100.00" y1="155.00" x2="565.00" y2="155.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="88.00" y="160.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">2.5</text>
+<line x1="100.00" y1="155.00" x2="100.00" y2="535.00" stroke="#526777" stroke-width="1.2"/>
+<line x1="100.00" y1="535.00" x2="565.00" y2="535.00" stroke="#526777" stroke-width="1.2"/>
+<rect x="187.00" y="228.19" width="105.00" height="306.81" rx="5" fill="#167a87" fill-opacity="0.78"/>
+<line x1="239.50" y1="238.04" x2="239.50" y2="218.33" stroke="#172733" stroke-width="2"/>
+<line x1="221.50" y1="238.04" x2="257.50" y2="238.04" stroke="#172733" stroke-width="2"/>
+<line x1="221.50" y1="218.33" x2="257.50" y2="218.33" stroke="#172733" stroke-width="2"/>
+<circle cx="217.50" cy="228.87" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="220.64" cy="215.20" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="223.79" cy="247.17" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="226.93" cy="211.00" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="230.07" cy="217.95" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="233.21" cy="229.77" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="236.36" cy="225.04" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="239.50" cy="231.02" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="242.64" cy="220.15" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="245.79" cy="224.50" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="248.93" cy="231.14" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="252.07" cy="239.67" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="255.21" cy="226.14" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="258.36" cy="239.78" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="261.50" cy="235.42" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<text x="239.50" y="562.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#243746">Bullet</text>
+<text x="239.50" y="204.33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#243746">2.041</text>
+<text x="239.50" y="187.33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">+/- 0.066</text>
+<rect x="382.30" y="308.27" width="105.00" height="226.73" rx="5" fill="#d6782f" fill-opacity="0.78"/>
+<line x1="434.80" y1="311.79" x2="434.80" y2="304.76" stroke="#172733" stroke-width="2"/>
+<line x1="416.80" y1="311.79" x2="452.80" y2="311.79" stroke="#172733" stroke-width="2"/>
+<line x1="416.80" y1="304.76" x2="452.80" y2="304.76" stroke="#172733" stroke-width="2"/>
+<circle cx="412.80" cy="308.16" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="415.94" cy="305.13" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="419.09" cy="302.33" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="422.23" cy="316.28" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="425.37" cy="308.97" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="428.51" cy="308.32" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="431.66" cy="312.26" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="434.80" cy="311.43" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="437.94" cy="310.04" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="441.09" cy="306.33" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="444.23" cy="308.62" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="447.37" cy="306.04" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="450.51" cy="309.79" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="453.66" cy="303.79" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="456.80" cy="306.63" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<text x="434.80" y="562.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#243746">MAFFT</text>
+<text x="434.80" y="580.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">pairlocalalign</text>
+<text x="434.80" y="290.76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#243746">1.508</text>
+<text x="434.80" y="273.76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">+/- 0.023</text>
+<text x="53.00" y="345.00" text-anchor="middle" transform="rotate(-90 53.00 345.00)" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#526777">ASan/native ratio</text>
+<rect x="615.00" y="92" width="555.00" height="500" rx="12" fill="#ffffff" stroke="#d6dee5" stroke-width="1.5"/>
+<text x="665.00" y="126.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#243746">Perimeter input comparison</text>
+<text x="665.00" y="148.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#526777">Same program; reference vs larger input; n = 15</text>
+<line x1="685.00" y1="535.00" x2="1140.00" y2="535.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="673.00" y="540.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">0.0</text>
+<line x1="685.00" y1="459.00" x2="1140.00" y2="459.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="673.00" y="464.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">2.9</text>
+<line x1="685.00" y1="383.00" x2="1140.00" y2="383.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="673.00" y="388.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">5.8</text>
+<line x1="685.00" y1="307.00" x2="1140.00" y2="307.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="673.00" y="312.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">8.8</text>
+<line x1="685.00" y1="231.00" x2="1140.00" y2="231.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="673.00" y="236.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">11.7</text>
+<line x1="685.00" y1="155.00" x2="1140.00" y2="155.00" stroke="#e3e9ee" stroke-width="1"/>
+<text x="673.00" y="160.00" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">14.6</text>
+<line x1="685.00" y1="155.00" x2="685.00" y2="535.00" stroke="#526777" stroke-width="1.2"/>
+<line x1="685.00" y1="535.00" x2="1140.00" y2="535.00" stroke="#526777" stroke-width="1.2"/>
+<rect x="769.00" y="379.69" width="105.00" height="155.31" rx="5" fill="#167a87" fill-opacity="0.78"/>
+<line x1="821.50" y1="398.79" x2="821.50" y2="360.59" stroke="#172733" stroke-width="2"/>
+<line x1="803.50" y1="398.79" x2="839.50" y2="398.79" stroke="#172733" stroke-width="2"/>
+<line x1="803.50" y1="360.59" x2="839.50" y2="360.59" stroke="#172733" stroke-width="2"/>
+<circle cx="799.50" cy="384.68" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="802.64" cy="396.71" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="805.79" cy="384.05" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="808.93" cy="364.35" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="812.07" cy="365.55" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="815.21" cy="370.88" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="818.36" cy="376.31" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="821.50" cy="381.65" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="824.64" cy="342.60" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="827.79" cy="363.22" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="830.93" cy="401.10" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="834.07" cy="422.55" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="837.21" cy="378.61" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="840.36" cy="393.73" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="843.50" cy="369.39" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<text x="821.50" y="562.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#243746">Perimeter input 10</text>
+<text x="821.50" y="346.59" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#243746">5.961</text>
+<text x="821.50" y="329.59" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">+/- 0.733</text>
+<rect x="960.10" y="250.73" width="105.00" height="284.27" rx="5" fill="#d6782f" fill-opacity="0.78"/>
+<line x1="1012.60" y1="283.13" x2="1012.60" y2="218.33" stroke="#172733" stroke-width="2"/>
+<line x1="994.60" y1="283.13" x2="1030.60" y2="283.13" stroke="#172733" stroke-width="2"/>
+<line x1="994.60" y1="218.33" x2="1030.60" y2="218.33" stroke="#172733" stroke-width="2"/>
+<circle cx="990.60" cy="259.59" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="993.74" cy="250.70" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="996.89" cy="247.49" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1000.03" cy="339.85" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1003.17" cy="245.62" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1006.31" cy="242.45" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1009.46" cy="254.76" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1012.60" cy="241.31" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1015.74" cy="178.48" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1018.89" cy="235.85" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1022.03" cy="265.33" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1025.17" cy="247.44" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1028.31" cy="266.42" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1031.46" cy="257.49" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<circle cx="1034.60" cy="228.20" r="3.1" fill="#ffffff" fill-opacity="0.86" stroke="#172733" stroke-width="1.4"/>
+<text x="1012.60" y="562.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#243746">Perimeter input 11</text>
+<text x="1012.60" y="204.33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#243746">10.911</text>
+<text x="1012.60" y="187.33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">+/- 1.244</text>
+<text x="638.00" y="345.00" text-anchor="middle" transform="rotate(-90 638.00 345.00)" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#526777">ASan/native ratio</text>
+<text x="44.00" y="624.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#526777">Error bars describe sample variability (n-1 denominator). Open circles show individual paired ratios; n = 15 per group. The figure does not establish statistical significance.</text>
+</svg>
