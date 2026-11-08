@@ -338,8 +338,8 @@ def add_panel(
     values = []
     for workload in workloads:
         result = results[workload]
-        values.extend((result.ratio_mean, result.ratio_mean + result.ratio_sd))
-    y_max = max(values) * 1.20
+        values.extend((*result.ratios, result.ratio_mean + result.ratio_sd))
+    y_max = max(values) * 1.30
 
     panel_right = x0 + width
     parts.append(
@@ -467,10 +467,13 @@ def add_panel(
                 )
             )
 
+        annotation_y = bottom - (
+            max(max(result.ratios), result.ratio_mean + result.ratio_sd) / y_max
+        ) * (bottom - top)
         parts.append(
             svg_text(
                 center,
-                high_y - 14,
+                annotation_y - 14,
                 f"{result.ratio_mean:.3f}",
                 size=15,
                 weight="bold",
@@ -480,7 +483,7 @@ def add_panel(
         parts.append(
             svg_text(
                 center,
-                high_y - 31,
+                annotation_y - 31,
                 f"+/- {result.ratio_sd:.3f}",
                 size=12,
                 anchor="middle",
