@@ -1,5 +1,17 @@
 # Week 3: ASan Stage 2 replication progress
 
+## Direction B acceptance: November 9, 2026
+
+Zhang Yuexiang (1230019110, GitHub `lylz199`) submitted the Stage 2 paired-ratio analysis in PR #7 at `28c7108c69b7aceb5e1fb3c06105b9e3e5f80938`, based on `98cf5f0249dd0537e02b4527c25c1e963c099eeb`. The submission adds an English report, a standard-library calculation script and a two-panel SVG. It checks Bullet, MAFFT pairlocalalign and the two perimeter inputs using 15 same-run modern-ASan/native pairs per group. The author's PR discloses AI assistance.
+
+Owner Zhou Xiaozhou appended the AI-assisted presentation revision `548e76d7134d8f7b8c76e17426d91baee73a25c3`. Mean/SD labels now sit above both the highest sample and the error-bar endpoint, with 30% axis headroom. The original analysis, report values, author commit and historical verification baseline are preserved. PR #7 was retargeted to main and its obsolete PR #5 status was corrected.
+
+In an isolated checkout, the owner reran the calculation script and independently checked all 60 report pairing rows and all four summary groups using an explicit n-1 formula. The SVG was reproducible across two runs and was rendered to confirm readable labels and visible samples. The candidate tree passed the existing Stage 2 verifier: 2,263 file hashes, 45 correctness trials, 540 formal trials, 24 upstream reference checks and 12 GCC differential checks, including schedule, output hashes, CSV/JSON and recomputed statistics. These are checks of saved records; no experiment was rerun. The selected mean ratios remain 2.041, 1.508, 5.961 and 10.911, respectively. Perimeter's larger input therefore has a higher observed ratio in this record, without establishing a general input-size law or a causal explanation.
+
+PR #7 was merged with merge commit `2bc5494ecfdfc9d56eed6a228f42ec4d05152e99`, preserving both author and owner commits. Its actual tree is `168cb7edf7c4bb08aa3ef88b877f5d58be4dd6a3`, identical to the tested candidate. Relative to the previous main, only the three B deliverables were added. The merge request locked the reviewed head. Main had no enabled branch protection or repository rulesets; the head had no check runs, commit statuses or workflow runs, and GitHub reported it cleanly mergeable. See [the B acceptance record](pr7-integration-verification.json).
+
+This accepts Zhang Yuexiang's analysis contribution and separately records the owner's presentation fix and integration. PR #6 and its pending revisions were not handled in this update. No raw evidence changed and no final release was published. The earlier integration notes below remain historical records.
+
 ## Integration update: November 6, 2026
 
 Owner: Zhou Xiaozhou, student ID 1240025753. The November 5 preparation record below is retained as historical context; its unmerged status is superseded by this update.

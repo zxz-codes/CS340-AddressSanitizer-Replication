@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-11-09T02:38:04.115+08:00",
+  "reviewer": {
+    "name": "Zhou Xiaozhou",
+    "student_id": "1240025753",
+    "github": "zxz-codes",
+    "assistance": "AI-assisted owner-side presentation revision, verification and integration"
+  },
+  "pr": 7,
+  "url": "https://github.com/zxz-codes/CS340-AddressSanitizer-Replication/pull/7",
+  "author": {
+    "name": "Zhang Yuexiang",
+    "student_id": "1230019110",
+    "github": "lylz199",
+    "original_analysis_commit": "28c7108c69b7aceb5e1fb3c06105b9e3e5f80938",
+    "historical_baseline": "98cf5f0249dd0537e02b4527c25c1e963c099eeb",
+    "ai_disclosure": "Author disclosed AI assistance in the PR; original report and analysis attribution preserved"
+  },
+  "integration": {
+    "previous_main": "56a52626ca016366a3fd7f5f081609c499bf6d66",
+    "owner_fix": "548e76d7134d8f7b8c76e17426d91baee73a25c3",
+    "reviewed_head": "548e76d7134d8f7b8c76e17426d91baee73a25c3",
+    "candidate_merge": "5187829ff5755817be2607ce029f0e3ff86a840d",
+    "candidate_tree": "168cb7edf7c4bb08aa3ef88b877f5d58be4dd6a3",
+    "actual_merge": "2bc5494ecfdfc9d56eed6a228f42ec4d05152e99",
+    "actual_tree": "168cb7edf7c4bb08aa3ef88b877f5d58be4dd6a3",
+    "actual_tree_matches_tested_candidate": true,
+    "merge_method": "merge",
+    "expected_head_sha_used": true,
+    "author_commit_preserved": true,
+    "only_added_files": [
+      "reports/week3/compute_stage2_ratios.py",
+      "reports/week3/figures/stage2-analysis.svg",
+      "reports/week3/results-analysis.md"
+    ],
+    "original_report_blob_unchanged": true,
+    "records_subtree_unchanged": true
+  },
+  "analysis": {
+    "passed": true,
+    "paired_rows_verified": 60,
+    "groups": [
+      {
+        "workload": "bullet-ref",
+        "n": 15,
+        "mean": 2.0409623748717878,
+        "sample_sd": 0.06555967790860452,
+        "mean_difference": 0,
+        "sd_difference": 0
+      },
+      {
+        "workload": "pairlocalalign-ref",
+        "n": 15,
+        "mean": 1.5082168833883354,
+        "sample_sd": 0.023358902422950654,
+        "mean_difference": 0,
+        "sd_difference": -3.469446951953614e-18
+      },
+      {
+        "workload": "perimeter-ref",
+        "n": 15,
+        "mean": 5.96145340263372,
+        "sample_sd": 0.7332673630675961,
+        "mean_difference": 8.881784197001252e-16,
+        "sd_difference": 0
+      },
+      {
+        "workload": "perimeter-large",
+        "n": 15,
+        "mean": 10.91149575272479,
+        "sample_sd": 1.243609812037248,
+        "mean_difference": 0,
+        "sd_difference": 0
+      }
+    ],
+    "figure_reproducible_two_runs": true,
+    "figure_points": 60,
+    "figure_annotations_clear_of_points": true,
+    "source_sha256": {
+      "measurements.json": "617d087959b7cdd7adb9c70dc994c0cf9b40175c33925757de66685fe5f8cbda",
+      "summary.json": "a4fcc848d29ccef7a9819e7967f6bb2e2cbad5c97c92b871db1a595a7031f712",
+      "protocol.json": "2b210cc005c310dbc4448f859f5f59037d846831bafd5db5feac70c8f26fd26e"
+    },
+    "experiments_rerun": false,
+    "independent_formula": "math.fsum(ratios)/15; sqrt(math.fsum((ratio-mean)**2)/14)",
+    "floating_point_tolerance": "relative 1e-14 for the explicit-formula comparison",
+    "rendered_figure_review_passed": true,
+    "figure_git_blob": "c95370e2cb839060d8bbafaf1ecccc7aae9a0144"
+  },
+  "stage2": {
+    "passed": true,
+    "record": "records/stage2/20261105T142515Z-caf43a",
+    "verified_file_hashes": 2263,
+    "correctness_trials": 45,
+    "reference_checks": 36,
+    "upstream_reference_checks": 24,
+    "gcc_differential_checks": 12,
+    "pilot_trials": 36,
+    "warmup_trials": 72,
+    "performance_trials": 540,
+    "statistics_recomputed": true,
+    "csv_matches_json": true,
+    "schedule_verified": true,
+    "stdout_hashes_recomputed": true
+  },
+  "repository_checks": {
+    "main_branch_protection_enabled": false,
+    "repository_rulesets": 0,
+    "commit_statuses": 0,
+    "combined_status": "pending",
+    "check_runs": 0,
+    "workflow_runs": 0,
+    "mergeable_state_before_merge": "clean",
+    "interpretation": "No required CI was configured. The pending combined-status value has zero statuses and is not a pending test. Local verification and GitHub mergeability checks were completed; no check was bypassed."
+  },
+  "commands": [
+    "python reports/week3/compute_stage2_ratios.py (two repeatability runs)",
+    "python -X utf8 scripts/verify_stage2.py",
+    "python tmp/verify-pr7-integration.py tmp/handle-pr7-20261109 tmp/pr7-analysis-verification.json (owner's isolated-checkout helper)",
+    "git diff --cached --check",
+    "git write-tree (candidate tree compared with GitHub candidate and actual merge)"
+  ],
+  "boundaries": {
+    "experiments_rerun": false,
+    "raw_evidence_modified": false,
+    "pr6_modified": false,
+    "release_published": false,
+    "existing_workspace_changes_preserved": true
+  }
+}
