@@ -10,6 +10,7 @@
 | Toolchain used | Python 3.12.15 (`~/.local/py312/python/bin/python3`), git 2.50.1 (Apple Git-155) |
 | Repository | https://github.com/zxz-codes/CS340-AddressSanitizer-Replication |
 | Baseline checked | `98cf5f0249dd0537e02b4527c25c1e963c099eeb` — `codex/stage2-benchmarks` ("[1240025753 Zhou Xiaozhou] Complete ASan Stage 2 replication") |
+| Revision of this note | Applied on branch `week3/zhang-hanyuan-audit` at `6e15e9ee53b9f055baa2917283e1d130cad34713`; the record data was unchanged, only this note was revised |
 | Record audited | `records/stage2/20261105T142515Z-caf43a` (selected through the pointer `records/latest-stage2.txt`) |
 | Branch | `week3/zhang-hanyuan-audit` (created from `codex/stage2-benchmarks`) |
 
@@ -212,37 +213,69 @@ precheck failures with no formal trials. The fourth is the one relevant here:
 
 The archived batch does contain a complete 648-row `measurements.json` with 540 formal
 trials. It was excluded because two Windows idle-standby intervals occurred during the run,
-so the host was not in a controlled state; no number from it is used in any report.
+so the host was not in a controlled state; no number from it is used in any report, and the
+complete experiment was rerun as the accepted batch `20261105T142515Z-caf43a`.
 
-I compared the archived batch against the final batch row by row, keyed on
-`(phase, workload, configuration, run)`. All 648 keys are present in both, and:
+### The accepted batch was rerun in full, then completed
+
+Two separate processes have to be kept apart when describing this record.
+
+**Process one — the standby-interrupted batch was discarded and the experiment rerun.**
+Comparing the archived batch against the accepted batch row by row, keyed on
+`(phase, workload, configuration, run)`, all 648 keys are present in both:
 
 | Field | Rows differing | Interpretation |
 |---|---:|---|
 | `stdout_sha256` | 0 / 648 | Sample output bytes are identical |
 | `stdout_raw_bytes` | 0 / 648 | Sample output sizes are identical |
 | `returncode` | 0 / 648 | Process outcomes are identical |
-| `argv` | 1 element / 648 | Only the capture directory embeds the batch id |
+| `argv` | 648 / 648 | The capture-directory argument changed in every record (it embeds the batch id) |
 | `cwd`, `asan_options`, `phase`, `configuration`, `workload`, `run`, `stdout`, `stderr`, `time_log`, `timed_out` | 0 / 648 | Protocol and schedule are identical |
-| `elapsed_seconds` | 648 / 648 | Timings were re-measured |
-| `wall_seconds`, `user_seconds`, `system_seconds` | 530–541 / 648 | Timings were re-measured |
-| `max_rss_kib` | 480 / 648 | Peak RSS was re-measured |
+| `elapsed_seconds` | 648 / 648 | Timings were measured again |
+| `wall_seconds`, `user_seconds`, `system_seconds` | 530–541 / 648 | Timings were measured again |
+| `max_rss_kib` | 480 / 648 | Peak RSS was measured again |
 
-**One clarification, because the distinction matters for how this result may be described.**
-The final batch did **not** simply carry the previous batch's numbers over. The protocol
-configuration and the sample output bytes are unchanged, but the timing and peak-RSS values
-were collected again in the new batch, and the new batch additionally carries a complete
-`environment/` directory (44 files) that the excluded batch does not have — this is the
-host-acceptance metadata the brief refers to, including `host-sleep-review.json`
-(`applicable: true`, `passed: true`, `events: []` for this batch), `host-power.json`,
-`affinity.json`, the before/after load and memory samples, and the upstream source hashes.
-So the accurate statement is: **the protocol and the sample bytes were preserved, the
-measurements were re-taken in the new batch, and host-acceptance metadata was added.**
+This comparison answers whether the accepted batch is a complete rerun: it is. The timing
+and peak-RSS values were collected again, so the two batches are not the same measurement
+run.
 
-The final batch's own standby review records no idle-standby events, and its
-`pre-host-review-status.json` shows the pre-review tooling failed on the sleep query
-(`returncode=1`) while still saving the 540 trials — the review was then completed
-separately, which is what `host-sleep-review.json` documents.
+**Process two — within the accepted batch, the host-acceptance metadata was completed after
+the measurements had finished.** The accepted batch's own record shows this directly:
+
+* `environment/pre-host-review-status.json` records that the pre-review tooling failed
+  (`"error": "RuntimeError('environment/host-sleep-query: returncode=1, timeout=False;
+  inspect raw streams')"`) while `"formal_trials_saved": 540` — the measurements were
+  already complete when the host sleep query failed.
+* `environment/host-sleep-review.json` records the completed review
+  (`"applicable": true`, `"passed": true`, `"events": []`), with
+  `"query_context": "Windows host PowerShell 7; post-run verification infrastructure
+  repair only"`.
+* `status.json` carries `"finalization": "Host review only; all original sample files and
+  protocol retained byte-for-byte"`, and its own `finalized_utc`
+  (`2026-11-05T14:56:48.092160+00:00`) is later than its `ended_utc` (`2026-11-05T14:52:27.363871+00:00`).
+
+To confirm that completing the acceptance metadata did not alter the accepted batch's
+measurements or its frozen protocol, I compared the batch's preserved pre-review manifest
+`environment/pre-host-review-manifest.json` with its final `sha256-manifest.json`:
+
+| Comparison | Result |
+|---|---|
+| Entries in the pre-review manifest | 2 260 |
+| Entries in the final manifest | 2 263 |
+| Pre-review entries whose hash is unchanged in the final manifest | 2 259 / 2 260 |
+| Pre-review entries whose hash changed | 1 — `status.json` only |
+| Pre-review entries whose stored bytes still match the pre-review hash | 2 259 / 2 260 (recomputed from disk) |
+| Entries added by the final manifest | 3 — `environment/host-sleep-review.json`, `environment/pre-host-review-manifest.json`, `environment/pre-host-review-status.json` |
+
+`measurements.json`, `measurements.csv` and `protocol.json` are among the 2 259 entries that
+retain their original hashes and match the final stored bytes. Only `status.json` changed,
+because it records the finalization itself. The manifest necessarily changed as well,
+because the three host-review files were added to it.
+
+Within the accepted batch, therefore, completing the acceptance metadata did not rerun or
+alter the accepted batch's measurements or its frozen protocol. The statement that the
+sample and protocol bytes are unchanged refers to this second process — the accepted batch
+against itself — and not to a comparison between the discarded batch and the accepted one.
 
 ## 6. Findings
 
@@ -256,14 +289,26 @@ re-derived during this check:
 * The 648 measurement rows re-counted into 36 pilot, 72 warm-up and 540 formal trials, and
   the formal count confirmed as 12 workloads × 3 configurations × 15 repetitions.
 * The 36 reference checks confirmed to be 24 upstream + 12 GCC differential, matching the
-  `reference_checks` declaration in `protocol.json`.
+  `reference_checks` declaration in `protocol.json`, and the split confirmed against the
+  per-workload `reference_kind` recorded by the script.
 * The two manual evidence chains traced as described in sections 3 and 4, including the
   compressed-versus-decompressed digest distinction, both sides of which were recomputed.
 
-The only observation worth carrying forward is descriptive rather than a defect: the
-excluded batch and the final batch differ in their timing and RSS values while agreeing on
-every sample byte, so "the same batch of measurements" must not be used to describe the
-relationship between the two. Section 5 records the comparison.
+Two points about how the batch was assembled are recorded in section 5, and neither is a
+defect in the record:
+
+* The standby-interrupted batch was excluded in full and the complete experiment was rerun
+  as the accepted batch. A row-by-row comparison of the two shows the timing and peak-RSS
+  values were measured again, so the accepted batch is a complete rerun and not a
+  continuation of the discarded one.
+* Within the accepted batch, all measurements had already finished when the host sleep
+  query failed. Comparing the batch's preserved pre-review manifest with its final manifest
+  shows that only `status.json` changed among the 2 260 original entries; the other 2 259
+  entries, including `measurements.json`, `measurements.csv` and `protocol.json`, retain
+  their original hashes and match the final stored bytes. Three entries were added for the
+  host sleep review and the preserved pre-review manifest and status, giving 2 263 entries
+  in the final manifest. Completing the acceptance metadata did not rerun or alter the
+  accepted batch's measurements or its frozen protocol.
 
 ## 7. Scope limits of this check
 
@@ -280,10 +325,12 @@ relationship between the two. Section 5 records the comparison.
   suite of 20 trials across four control categories. A clean control suite is not evidence
   of the absence of false positives in general, and the injected errors are not bugs in the
   benchmark programs.
-* **The two reference families are not equally strong.** The 12 GCC differential checks
-  compare against a cross-compiler oracle generated in the build tree, which
-  `protocol.json` itself notes "are not independent algorithmic proofs". The 24 upstream
-  checks reuse ref-size expected outputs for the pinned large inputs.
+* **The two reference families are not equally strong.** The 24 upstream checks cover
+  eight reference workloads across three configurations and compare against upstream
+  expected outputs. The four large-input workloads have no matching upstream large-input
+  expectations at the pinned revision; their 12 checks use separately built GCC
+  full-output differential references. These differential checks establish cross-compiler
+  output consistency, not independent algorithmic correctness.
 * **Workload coverage is a subset.** The twelve workloads are the eight upstream reference
   programs plus four `large` variants; this is not the paper's SPEC CPU2006 aggregate and
   does not reproduce the paper's headline memory figure.
