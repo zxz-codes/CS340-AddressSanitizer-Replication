@@ -232,7 +232,9 @@ Comparing the archived batch against the accepted batch row by row, keyed on
 | `argv` | 648 / 648 | The capture-directory argument changed in every record (it embeds the batch id) |
 | `cwd`, `asan_options`, `phase`, `configuration`, `workload`, `run`, `stdout`, `stderr`, `time_log`, `timed_out` | 0 / 648 | Protocol and schedule are identical |
 | `elapsed_seconds` | 648 / 648 | Timings were measured again |
-| `wall_seconds`, `user_seconds`, `system_seconds` | 530–541 / 648 | Timings were measured again |
+| `wall_seconds` | 530 / 648 | Timings were measured again |
+| `user_seconds` | 541 / 648 | Timings were measured again |
+| `system_seconds` | 469 / 648 | Timings were measured again |
 | `max_rss_kib` | 480 / 648 | Peak RSS was measured again |
 
 This comparison answers whether the accepted batch is a complete rerun: it is. The timing
@@ -351,3 +353,8 @@ comparisons in section 5, the digest recomputations in section 4, and the wordin
 note were produced with AI assistance, and were checked against the committed files rather
 than asserted. The interpretation of the evidence, and the conclusion that no defect was
 found, are the author's own.
+
+
+## 9. Owner-side integration correction — November 13, 2026
+
+Zhou Xiaozhou (1240025753), with AI assistance, rechecked the excluded archive against the accepted batch and corrected the time-field difference counts in section 5: wall_seconds 530, user_seconds 541, and system_seconds 469 of 648 rows. This presentation correction preserves the author's historical verification baseline and original conclusions. The owner also reran both stage verifiers and independently checked the accepted batch's 2,260-to-2,263 manifest transition and the manual error/control and output-digest evidence. No experiment was rerun and no raw evidence changed.
