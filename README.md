@@ -11,7 +11,7 @@ Group repository: https://github.com/zxz-codes/CS340-AddressSanitizer-Replicatio
 | Zhang Yinyuan | 1230022374 |
 | Zhang Yuexiang | 1230019110 |
 
-Individual roles will be recorded later, as requested by the group.
+Reviewed roles and evidence are recorded in [group contributions](config/group-contributions-template.md). See the [submission integration index](reports/submissions-index.md) for all accepted PRs, individual deliverables and the latest acceptance checks.
 
 This project tests memory-error detection and measures ASan overhead on an open-source LLVM Olden subset. The instructor allowed an alternative because the institution has no SPEC CPU2006 license. This is a modern implementation on substitute workloads, not an exact reproduction of the SPEC result.
 

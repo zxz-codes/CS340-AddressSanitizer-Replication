@@ -1,0 +1,171 @@
+{
+  "checked_at": "2026-11-13T20:02:04.633+08:00",
+  "reviewer": {
+    "name": "Zhou Xiaozhou",
+    "student_id": "1240025753",
+    "github": "zxz-codes",
+    "assistance": "AI-assisted owner-side verification, correction and integration"
+  },
+  "previous_main": "7d4fbdb2ca5f22e3c9e92b30c6bcf58d9279e1f3",
+  "submitted_prs": [
+    {
+      "number": 7,
+      "author": "lylz199",
+      "author_head": "548e76d7134d8f7b8c76e17426d91baee73a25c3",
+      "merge": "2bc5494ecfdfc9d56eed6a228f42ec4d05152e99",
+      "merged": true
+    },
+    {
+      "number": 6,
+      "author": "Galax1an121",
+      "author_head": "baf04aa3c3854ec7537ed656a62c03c3194dbe47",
+      "merge": "3a472d3253abd2577361de2c79fc8804aa87f3cf",
+      "merged": true
+    },
+    {
+      "number": 5,
+      "author": "zxz-codes",
+      "author_head": "98cf5f0249dd0537e02b4527c25c1e963c099eeb",
+      "merge": "5abfd816ff1331cb3fd5564328198bdd17d5b152",
+      "merged": true
+    },
+    {
+      "number": 4,
+      "author": "zhangyinyuan1230022374",
+      "author_head": "bd99248997d7a3be9c58d941bde94e051e296f09",
+      "merge": "9424ff7e3a20d732c3c469569799a4196b322ccc",
+      "merged": true
+    },
+    {
+      "number": 3,
+      "author": "lylz199",
+      "author_head": "cbd0d5a681bac603120b32cec3a8ada323c36f63",
+      "merge": "ea24143b59b57f20b2f97d5aa22b54bf71484ad5",
+      "merged": true
+    },
+    {
+      "number": 2,
+      "author": "Galax1an121",
+      "author_head": "18aad610e117c828a8e3899e80cab1c818b5b04a",
+      "merge": "ba5fd4a26ff172f052fd129b27f4548b1f96bcc9",
+      "merged": true
+    },
+    {
+      "number": 1,
+      "author": "Galax1an121",
+      "author_head": "f7b56aae5fbb7913bf316ff0a290657577f5ef90",
+      "merge": "40a3c800b6030bb6b67611164a0f3d808b6de2f8",
+      "merged": true
+    }
+  ],
+  "branches_inspected": [
+    "codex/stage2-benchmarks",
+    "docs/week2-presentation",
+    "feature/zhang-hanyuan-stage1-audit",
+    "main",
+    "review/week2-check",
+    "week2-results-explained-1230019110",
+    "week3/zhang-hanyuan-audit",
+    "week3/zhang-yuexiang-analysis"
+  ],
+  "pr6": {
+    "author_revision": "baf04aa3c3854ec7537ed656a62c03c3194dbe47",
+    "owner_count_correction": "6f28171397e80d5c0fca892ad5cc9bb737076ec1",
+    "reviewed_head": "6f28171397e80d5c0fca892ad5cc9bb737076ec1",
+    "merge": "3a472d3253abd2577361de2c79fc8804aa87f3cf",
+    "tested_candidate_tree": "74d3a9bfda3015208b6464a1d511fb83b441b334",
+    "actual_merge_tree": "74d3a9bfda3015208b6464a1d511fb83b441b334",
+    "actual_tree_matches_candidate": true,
+    "only_added_file": "reports/week3/result-check.md",
+    "historical_author_baseline": "98cf5f0249dd0537e02b4527c25c1e963c099eeb",
+    "expected_head_sha_used": true
+  },
+  "checks": {
+    "stage1": {
+      "passed": true,
+      "record": "records/stage1/20261025T072502Z-06ebb2",
+      "verified_file_hashes": 372,
+      "correctness_trials": 45,
+      "performance_trials": 75,
+      "extension_trials": 30,
+      "reference_checks": 10,
+      "statistics_recomputed": true,
+      "stdout_hashes_recomputed": true
+    },
+    "stage2": {
+      "passed": true,
+      "record": "records/stage2/20261105T142515Z-caf43a",
+      "verified_file_hashes": 2263,
+      "correctness_trials": 45,
+      "reference_checks": 36,
+      "upstream_reference_checks": 24,
+      "gcc_differential_checks": 12,
+      "pilot_trials": 36,
+      "warmup_trials": 72,
+      "performance_trials": 540,
+      "statistics_recomputed": true,
+      "csv_matches_json": true,
+      "schedule_verified": true,
+      "stdout_hashes_recomputed": true
+    },
+    "manual_and_provenance": {
+      "passed": true,
+      "pre_review_entries": 2260,
+      "final_entries": 2263,
+      "changed_existing": [
+        "status.json"
+      ],
+      "original_byte_hash_matches": 2259,
+      "added_entries": [
+        "environment/host-sleep-review.json",
+        "environment/pre-host-review-manifest.json",
+        "environment/pre-host-review-status.json"
+      ],
+      "excluded_archive_sha256_verified": true,
+      "old_new_record_keys": 648,
+      "field_difference_counts": {
+        "stdout_sha256": 0,
+        "stdout_raw_bytes": 0,
+        "returncode": 0,
+        "argv": 648,
+        "elapsed_seconds": 648,
+        "wall_seconds": 530,
+        "user_seconds": 541,
+        "system_seconds": 469,
+        "max_rss_kib": 480,
+        "cwd": 0,
+        "asan_options": 0,
+        "phase": 0,
+        "configuration": 0,
+        "workload": 0,
+        "run": 0,
+        "stdout": 0,
+        "stderr": 0,
+        "time_log": 0,
+        "timed_out": 0
+      },
+      "manual_error_and_control_evidence": true,
+      "compressed_vs_decompressed_digests": true
+    },
+    "b_calculation_script_exit_code": 0,
+    "stage1_generated_acceptance_bytes_restored": true,
+    "git_diff_check_passed": true,
+    "records_subtree_unchanged": "fa949e591894fa375ff1143f55c0207bb66d88bc"
+  },
+  "ci": {
+    "main_protected": false,
+    "rulesets": 0,
+    "head_check_runs": 0,
+    "head_commit_statuses": 0,
+    "head_workflow_runs": 0,
+    "mergeable_state": "clean",
+    "no_checks_bypassed": true
+  },
+  "remaining": {
+    "week3_c_not_submitted": true,
+    "final_presentation_not_submitted": true,
+    "final_release_not_published": true
+  },
+  "experiments_rerun": false,
+  "raw_evidence_modified": false
+}

@@ -1,5 +1,15 @@
 # Week 3: ASan Stage 2 replication progress
 
+## Submitted-work integration: November 13, 2026
+
+All seven submitted PRs (#1–#7) are now merged into main. The existing branches were inspected; each is associated with one of these submissions. No Week 3 C PR or separate unsubmitted branch was present. The accepted Week 2 presentation outline is credited to Zhang Yinyuan; it is not a final slide deck.
+
+Zhang Hanyuan revised PR #6 at `baf04aa3c3854ec7537ed656a62c03c3194dbe47`, correcting the reference-check scope and distinguishing the excluded-batch rerun from acceptance-metadata completion within the accepted batch. Owner Zhou Xiaozhou independently checked those claims and appended the AI-assisted count correction `6f28171397e80d5c0fca892ad5cc9bb737076ec1`: wall_seconds, user_seconds and system_seconds differ in 530, 541 and 469 of 648 old/new rows, respectively. The report and PR description now agree. The author's historical baseline and verification statement are retained.
+
+PR #6 was retargeted to main and merged with locked reviewed head as `3a472d3253abd2577361de2c79fc8804aa87f3cf`. Its actual tree `74d3a9bfda3015208b6464a1d511fb83b441b334` matches the checked candidate and adds only the personal audit to the preceding main. Stage 1 passed 372 file hashes and Stage 2 passed 2,263, including all recorded statistics, outputs and reference checks. Independent checks also confirmed the two manual evidence chains, archived-batch digest and comparison, and the accepted batch's 2,260-to-2,263 manifest transition (only status.json changed among original entries; 2,259 original hashes retained). The B script ran successfully again. The Stage 1 verifier's generated acceptance-summary bytes were restored in the isolated checkout after saving its output.
+
+The [submission index](../submissions-index.md) collects all accepted contributions; the [integration record](all-submissions-integration.json) records commit IDs and checks. Earlier entries below describe their respective historical states; their pending PR #6 statements are superseded by this update. No performance experiment was rerun, no original evidence changed, and no final release was published. AI assisted owner-side review, correction and documentation.
+
 ## Direction B acceptance: November 9, 2026
 
 Zhang Yuexiang (1230019110, GitHub `lylz199`) submitted the Stage 2 paired-ratio analysis in PR #7 at `28c7108c69b7aceb5e1fb3c06105b9e3e5f80938`, based on `98cf5f0249dd0537e02b4527c25c1e963c099eeb`. The submission adds an English report, a standard-library calculation script and a two-panel SVG. It checks Bullet, MAFFT pairlocalalign and the two perimeter inputs using 15 same-run modern-ASan/native pairs per group. The author's PR discloses AI assistance.
