@@ -1,6 +1,10 @@
 # CS340: AddressSanitizer replication
 
+Latest integration (19 November): [all received work for 9–15 November](reports/week-20261109/README.md) includes A PR #8, B PR #10 and C PR #9, with preserved author histories. C is an additional display draft; the two revised C Markdown outputs and final-report consolidation remain pending. The local 13 November synthesis and complete pairing CSV are now synchronized as historical owner materials.
+
 Paper 8: **AddressSanitizer: A Fast Address Sanity Checker**, USENIX ATC 2012.
+
+Course handout and persistent handoff: [original requirements PDF](docs/course/2609_CS340_Research_Paper_Replication.pdf) and [requirements, dates and completed-extension evidence](docs/course/README.md). The presentation is tentatively December 1, 2026; this handout does not give a separate final-report deadline. The Stage 1 redzone single-factor extension is already complete (30 measured trials).
 
 Group repository: https://github.com/zxz-codes/CS340-AddressSanitizer-Replication
 
@@ -88,6 +92,8 @@ python scripts/make_stage2_reports.py
 Verification is read-only and checks all 648 pilot/warm-up/formal rows, the paired matrix, random schedule, raw outputs, CSV/JSON, statistics and file manifests. Mutation tests use a temporary copy and confirm that missing/duplicate trials, wrong commands, corrupted output and wrong statistics are rejected. The Stage 2 report generator reads only a verified successful run and writes an independent English PDF and figures. See [Stage 2 recorded results](reports/stage2/results.md).
 
 Stage 2 report: [English](output/pdf/ASan_Stage2_Replication_Report_EN.pdf). The Chinese explanation is retained locally and is excluded from this English submission. The [Week 3 owner update](reports/week3/owner-update.md) records actual work, deviations and excluded batches. A complete run on the recorded machine takes roughly half an hour; initial builds and file verification may add time. On WSL, use the PowerShell wrapper so idle-sleep prevention and host log review run in the Windows context. Finalizing acceptance metadata never changes measured samples or their frozen protocol.
+
+Latest analysis: the [November 13 weekly supplement](output/pdf/ASan_Weekly_Synthesis_20261113_EN.pdf) consolidates all 12 workloads' paired timing/RSS ratios and input-size comparisons from the verified saved batch. Its [editable source and data](reports/week3/weekly-synthesis/report.md) and [13 November checklist](reports/week3/weekly-synthesis/本周推进清单.md) are review materials; no new experiment or final presentation is claimed. Regenerate with `python scripts/make_weekly_synthesis.py` (requires reportlab).
 
 ## Stage 1 reports
 

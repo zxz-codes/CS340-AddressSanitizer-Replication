@@ -19,7 +19,8 @@ Evidence: `records/stage2/20261105T142515Z-caf43a`
 | perimeter-large | 0.387 +/- 0.060 | 10.911 +/- 1.244 | 2.017 +/- 0.229 |
 | tsp-large | 0.573 +/- 0.037 | 3.372 +/- 0.274 | 1.864 +/- 0.150 |
 
-Ratios are paired within each run, n=15. RSS is not VmPeak. Workloads and sizes are reported separately.
+Ratios are paired within each run, n=15; SD is the sample standard deviation with an n-1 denominator, not a confidence interval or significance test. RSS is not VmPeak. Workloads and sizes are reported separately.
+One complete 540-trial batch was excluded after Windows idle standby and the full matrix was rerun. Within the accepted batch, completing host-acceptance metadata changed only `status.json` among the 2,260 original manifest entries; 2,259 hashes were retained and three host-review entries were added, yielding 2,263. No accepted measurement or frozen protocol was changed or rerun during that metadata completion. See [batch provenance](../week3/owner-update.md) and [the independent audit](../week3/result-check.md).
 Larger inputs have no matching upstream reference output at the pinned revision. Their full outputs are checked against an independent GCC build; this is cross-compiler consistency, not an independent algorithmic proof.
 The timer includes shell/taskset/GNU time/process launch and exit. Stage 1 used a different launch wrapper and pipe capture, while Stage 2 captures on ext4; cross-batch differences cannot be attributed to sample count alone.
 A finite clean-control suite does not prove absence of false positives. No SPEC CPU2006, writes-only instrumentation or Chromium finding is established.

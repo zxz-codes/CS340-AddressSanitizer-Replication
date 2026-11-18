@@ -11,6 +11,8 @@
 | Record audited | `records/stage2/20261105T142515Z-caf43a` (selected through `records/latest-stage2.txt`) |
 | Machine | macOS 26.6 (Darwin 25.6.0), arm64 · Python 3.12.15 |
 
+> Owner integration note, 2026-11-19: Section 3's RSS-field count was corrected from 36 to 24 against the saved JSON. This correction is by Zhou Xiaozhou with AI assistance. The author's original baseline, unavailable-input account and review scope are retained. The later owner CSV verification is recorded separately in [integration.md](integration.md).
+
 ## 1. Scope of this review, and one item that could not be reviewed
 
 This is a **read-only consistency review of the saved stage-2 record and of the wording that
@@ -115,7 +117,7 @@ existing formal trials: for each workload and each run, the ASan trial is divide
 **same-round** `native` trial. The record contains 360 rows whose configuration starts with
 `asan` (12 workloads × 2 ASan profiles × 15 runs) and 180 `native` rows; 360 + 180 = 540.
 `summary.json` carries 36 summary entries, of which **24** have a `paired_time_ratio` field
-(12 workloads × 2 ASan profiles, each with `n = 15`) and all 36 have a `paired_rss_ratio`.
+(12 workloads × 2 ASan profiles, each with `n = 15`) and the same 24 ASan entries have a `paired_rss_ratio`; the 12 native entries have neither paired field.
 Every `n` is 15.
 
 So a paired figure such as `perimeter-ref / asan-modern = 5.961` is a statistic over the 15

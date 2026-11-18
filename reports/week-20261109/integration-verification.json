@@ -1,0 +1,90 @@
+{
+  "checked_date": "2026-11-19",
+  "week": "2026-11-09/2026-11-15",
+  "base_main": "ea97b31a57cbea370275a3eeef00229d9a30abee",
+  "reviewer": "1240025753 Zhou Xiaozhou; AI-assisted owner integration",
+  "experiments_rerun": false,
+  "final_release_published": false,
+  "stage1": {
+    "passed": true,
+    "record": "records/stage1/20261025T072502Z-06ebb2",
+    "verified_file_hashes": 372,
+    "correctness_trials": 45,
+    "performance_trials": 75,
+    "extension_trials": 30,
+    "reference_checks": 10,
+    "statistics_recomputed": true,
+    "stdout_hashes_recomputed": true,
+    "generated_audit_summary_restored_in_isolated_copy": true
+  },
+  "stage2": {
+    "passed": true,
+    "record": "records/stage2/20261105T142515Z-caf43a",
+    "verified_file_hashes": 2263,
+    "correctness_trials": 45,
+    "reference_checks": 36,
+    "upstream_reference_checks": 24,
+    "gcc_differential_checks": 12,
+    "pilot_trials": 36,
+    "warmup_trials": 72,
+    "performance_trials": 540,
+    "statistics_recomputed": true,
+    "csv_matches_json": true,
+    "schedule_verified": true,
+    "stdout_hashes_recomputed": true
+  },
+  "A": {
+    "head": "c9fef8062bde62e72bd759446dacb2d7f02dc9c8",
+    "spotcheck_rows": 8,
+    "spotcheck_metric_groups_matched": 4,
+    "paired_time_summary_groups": 24,
+    "paired_rss_summary_groups": 24,
+    "owner_correction": "The note incorrectly said all 36 summary entries had paired_rss_ratio; only 24 ASan entries do.",
+    "merge": "904939a60a8cb1a2b7212ff6502cbd2b32a9beca"
+  },
+  "owner_synthesis": {
+    "paired_csv_rows_verified": 360,
+    "summary_groups_verified": 24,
+    "input_comparisons_verified": 8,
+    "source_hashes_verified": 4,
+    "historical_date": "2026-11-13",
+    "not_reviewed_by_A_at_his_original_baseline": true,
+    "pdf_pages_rendered": 4,
+    "pdf_visual_review": "All 4 rendered pages inspected; historical PDF unchanged."
+  },
+  "B": {
+    "passed": true,
+    "reviewed_head": "0818544b87f3ab10f2a43d67c0937b22020e5e1c",
+    "remote_file_blobs_verified": 4,
+    "groups_run_coverage": 36,
+    "frozen_ratio_groups": 24,
+    "input_table_rows": 8,
+    "application_table_rows": 4,
+    "svg_bars_and_error_spans": 32,
+    "svg_regeneration_matches": true,
+    "fresh_experiments": false,
+    "merge": "ea97b31a57cbea370275a3eeef00229d9a30abee"
+  },
+  "C": {
+    "head": "27e40aac9110398e3d4bb7e78609757006cd3d89",
+    "slides": 8,
+    "original_deck_blob": "65fe2448758d47166e04f327f87bc43ec6d34ea1",
+    "original_deck_preserved": true,
+    "acceptance": "Additional display draft only; revised C assignment remains incomplete",
+    "missing": [
+      "reports/week-20261109/report-materials-C.md",
+      "reports/week-20261109/group-display-materials-C.md"
+    ],
+    "visual_review": "All 8 previously rendered slides individually inspected; original PPTX unchanged; use corrections in presentations/week3/README.md.",
+    "merge": "c6ac0fe2c8d9f6c59bc577d7dfe67fb1de59c173"
+  },
+  "frozen_records_unchanged_from_base": true,
+  "passed": true,
+  "remote_checks_at_review": {
+    "A_statuses": [],
+    "C_statuses": [],
+    "PR_8_comments": [],
+    "PR_9_comments": []
+  },
+  "integrated_member_base": "c6ac0fe2c8d9f6c59bc577d7dfe67fb1de59c173"
+}
